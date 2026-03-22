@@ -6,7 +6,10 @@
   <title>Prof. Dr. İbrahim Toprak | Kornea, Katarakt, Refraktif Cerrahi ve Glokom</title>
   <meta name="description" content="Prof. Dr. İbrahim Toprak — Pamukkale Üniversitesi Göz Hastalıkları öğretim üyesi. Keratokonus, katarakt, lazer refraktif cerrahi ve glokom alanlarında uzmanlaşmış oftalmolog. Denizli.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://ibrahimtoprak.com">
+  <link rel="canonical" href="https://ibrahimtoprak.com/">
+  <link rel="alternate" hreflang="tr" href="https://ibrahimtoprak.com/">
+  <link rel="alternate" hreflang="en" href="https://ibrahimtoprak.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://ibrahimtoprak.com/">
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -272,8 +275,7 @@
     .spec-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 18px; }
     .spec-points { display: flex; flex-direction: column; gap: 8px; margin-top: auto; }
     .spec-point { display: flex; align-items: flex-start; gap: 9px; font-size: 13px; }
-    .spec-point::before { margin-top: 6px; }
-    .spec-point::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .spec-point::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 6px; }
     .spec-point span { color: var(--text-muted); }
     .spec-pub-badge { margin-top: 18px; padding: 14px 16px; background: var(--gold-pale); border-radius: var(--r-sm); border-left: 3px solid var(--gold); display: flex; align-items: center; gap: 12px; }
     .spec-pub-num { font-family: var(--font-serif); font-size: 28px; font-weight: 700; color: var(--navy); line-height: 1; flex-shrink: 0; }
@@ -320,17 +322,7 @@
     .surg-cell-title { font-size: 15px; font-weight: 700; color: rgba(255,255,255,0.97); text-align: center; line-height: 1.4; padding: 12px 12px 6px; transition: color 0.3s; }
     .surg-cell:hover .surg-cell-title { color: #fff; }
     .surg-cell-desc { font-size: 13.5px; text-align: center; line-height: 1.65; padding: 0 12px 10px; }
-    .surg-desc-preview {
-      color: rgba(255,255,255,0.82);
-      transition: opacity 0.3s ease;
-    }
-    .surg-desc-full {
-      max-height: 0; overflow: hidden; opacity: 0;
-      color: rgba(255,255,255,0.72);
-      transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.4s ease 0.1s;
-    }
-    .surg-cell:hover .surg-desc-preview { opacity: 0; max-height: 0; overflow: hidden; position: absolute; }
-    .surg-cell:hover .surg-desc-full { max-height: 200px; opacity: 1; }
+
     .surg-desc-preview {
       color: rgba(255,255,255,0.72);
       transition: opacity 0.3s ease, max-height 0.4s ease;
@@ -868,6 +860,7 @@
         </nav>
 
         <div style="display:flex;align-items:center;gap:10px;">
+          <a href="/en" title="Switch to English" style="font-size:11px;font-weight:700;color:var(--slate);border:1px solid var(--border);padding:5px 10px;border-radius:var(--r-sm);transition:all 0.2s;text-decoration:none;white-space:nowrap;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--slate)'">EN</a>
           <div style="position:relative;" class="phone-btn-wrap">
             <a href="tel:+904444747"
                style="display:inline-flex;align-items:center;justify-content:center;
@@ -885,7 +878,7 @@
           </div>
           <a href="#iletisim" class="btn btn-gold" style="height:42px;font-size:12px;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
-            Randevu Talebi
+            <span>Randevu Talebi</span>
           </a>
         </div>
       </div>
@@ -912,7 +905,7 @@
           güven ve tecrübe
         </h1>
         <p>
-          İleri tanı teknolojileri, uluslararası akademik birikimi ve
+İleri tanı teknolojileri, uluslararası akademik birikimi ve
           kişiye özgü cerrahi planlamayı hasta güvenliğini merkeze alan bir
           anlayışla bir araya getirir.
         </p>
@@ -986,7 +979,7 @@
     <div class="container">
       <div class="label">Uluslararası Yeterlilik</div>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:end; margin-bottom:40px;">
-        <h2 class="section-title reveal" style="color:var(--white);">Küresel Standartlarda<br>Akreditasyon</h2>
+        <h2 class="section-title reveal" style="color:var(--white);">Küresel Standartlarda<br>Akredite Bir Göz Doktoru</h2>
         <p class="section-sub reveal" style="color:rgba(255,255,255,0.55);">Dünyanın en prestijli oftalmoloji ve cerrahi kurumlarından alınan yeterlilik belgeleri — bilimin ve güvenin belgesi.</p>
       </div>
 
@@ -1002,11 +995,11 @@
           <div style="margin-top:14px; display:flex; flex-direction:column; gap:7px;">
             <div style="display:flex; align-items:center; gap:8px; font-size:12px; color:rgba(255,255,255,0.7);">
               <span style="width:6px; height:6px; border-radius:50%; background:var(--gold); flex-shrink:0; display:block;"></span>
-              Kornea &amp; Oküler Yüzey Birimi
+              <span>Kornea &amp; Oküler Yüzey Birimi</span>
             </div>
             <div style="display:flex; align-items:center; gap:8px; font-size:12px; color:rgba(255,255,255,0.7);">
               <span style="width:6px; height:6px; border-radius:50%; background:var(--gold); flex-shrink:0; display:block;"></span>
-              Katarakt &amp; Refraktif Cerrahi Birimi
+              <span>Katarakt &amp; Refraktif Cerrahi Birimi</span>
             </div>
           </div>
         </div>
@@ -1479,7 +1472,7 @@
 
         <details class="faq-item reveal">
           <summary>
-            Katarakt ameliyatı zor bir işlem midir?
+            <span>Katarakt ameliyatı zor bir işlem midir?</span>
             <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
           </summary>
           <p class="faq-body">Modern FAKO yöntemi ile katarakt cerrahisi çoğunlukla dikişsiz uygulanan bir süreçtir. Ancak her cerrahide olduğu gibi başarı; doğru yönlendirme, hassas planlama ve deneyimli cerrahi yaklaşımla doğrudan ilişkilidir.</p>
@@ -1487,7 +1480,7 @@
 
         <details class="faq-item reveal">
           <summary>
-            Lazer göz ameliyatı herkese uygun mudur?
+            <span>Lazer göz ameliyatı herkese uygun mudur?</span>
             <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
           </summary>
           <p class="faq-body">Hayır. Kornea yapısı, kalınlık, topografi, göz kuruluğu düzeyi ve bazı sistemik veya oküler durumlar lazer için uygunluğu etkileyebilir. Bu nedenle karar mutlaka detaylı muayene ile verilir.</p>
@@ -1495,15 +1488,15 @@
 
         <details class="faq-item reveal">
           <summary>
-            Keratokonus ilerlemesi durdurulabilir mi?
+            <span>Keratokonus ilerlemesi durdurulabilir mi?</span>
             <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
           </summary>
-          <p class="faq-body">Uygun hastalarda uygulanan çapraz bağlama (cross-linking), keratokonus ilerlemesini yavaşlatmak veya durdurmak amacıyla kullanılan en önemli tedavi seçeneklerinden biridir. Erken tanı bu süreçte kritik öneme sahiptir.</p>
+          <p class="faq-body">Uygun hastalarda uygulanan çapraz bağlama (cross-linking), keratokonus ilerlemesini yavaşlatmak veya durdurmak amacıyla kullanılan en önemli tedave seçeneklerinden biridir. Erken tanı bu süreçte kritik öneme sahiptir.</p>
         </details>
 
         <details class="faq-item reveal">
           <summary>
-            Akıllı lens her hastaya takılabilir mi?
+            <span>Akıllı lens her hastaya takılabilir mi?</span>
             <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
           </summary>
           <p class="faq-body">Her zaman değil. Kornea yapısı, retina sağlığı, göz tansiyonu ve görsel beklenti seviyesi gibi çok sayıda parametre değerlendirilmeden premium mercek kararı verilmemelidir.</p>
@@ -1538,7 +1531,7 @@
 
         <div class="ig-feed reveal" style="border-radius:var(--r-lg); overflow:hidden; border:1px solid var(--border); background:var(--cream);">
           <behold-widget feed-id="d2LgVjjHH75RbnEH4ls4" style="width:675px; max-width:100%; display:block;"></behold-widget>
-          <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+          <script>
             (() => {
               const d=document,s=d.createElement("script");s.type="module";
               s.src="https://w.behold.so/widget.js";d.head.append(s);
@@ -1695,15 +1688,11 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
-  <button class="scroll-top" id="btn-scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Sayfanın başına dön">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
-
   <!-- =====================================================
        JAVASCRIPT — Scroll animations + Header scroll
   ===================================================== -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    // Scroll-reveal
+  <script>
+
     // Copyright year
     const yr = document.getElementById('copy-year');
     if (yr) yr.textContent = new Date().getFullYear();
