@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prof. Dr. İbrahim Toprak | Cornea, Cataract, Refractive Surgery &amp; Glaucoma</title>
+  <meta name="description" content="Prof. Dr. İbrahim Toprak — Ophthalmology faculty member at Pamukkale University. Specialist in keratoconus, cataract, laser refractive surgery and glaucoma. Denizli, Turkey.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ibrahimtoprak.com/">
+  <link rel="alternate" hreflang="en" href="https://ibrahimtoprak.com/">
+  <link rel="alternate" hreflang="en" href="https://ibrahimtoprak.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://ibrahimtoprak.com/">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* =====================================================
+       DESIGN TOKENS
+    ===================================================== */
+    :root {
+      --navy:        #0F3358;
+      --navy-mid:    #174070;
+      --navy-soft:   #1F508A;
+      --gold:        #FF5C00;
+      --gold-light:  #FF8040;
+      --gold-pale:   #FFF0E8;
+      --cream:       #F7F3EC;
+      --white:       #FFFFFF;
+      --slate:       #5A7085;
+      --slate-light: #8DA0B3;
+      --text:        #1C2B3A;
+      --text-muted:  #5A7085;
+      --border:      rgba(15, 51, 88, 0.08);
+      --border-gold: rgba(255, 92, 0, 0.25);
+      --shadow-sm:   0 4px 20px rgba(15, 51, 88, 0.06);
+      --shadow-md:   0 12px 40px rgba(15, 51, 88, 0.10);
+      --shadow-lg:   0 24px 64px rgba(15, 51, 88, 0.14);
+      --r-sm: 10px;
+      --r-md: 16px;
+      --r-lg: 24px;
+      --r-xl: 32px;
+      --wrap: 1220px;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans:  'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
+    /* =====================================================
+       RESET & BASE
+    ===================================================== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--font-sans); background: var(--cream); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    .container { width: min(var(--wrap), calc(100% - 48px)); margin-inline: auto; }
+    .section { padding: 100px 0; }
+
+    /* =====================================================
+       TYPOGRAPHY SYSTEM
+    ===================================================== */
+    .label {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-family: var(--font-sans); font-size: 11px; font-weight: 700;
+      letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .label::before { content: ""; width: 32px; height: 1px; background: var(--gold); }
+
+    h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; line-height: 1.1; }
+
+    .section-title { font-size: clamp(36px, 4vw, 52px); color: var(--navy); margin-bottom: 18px; }
+    .section-sub { font-size: 16px; color: var(--text-muted); max-width: 580px; line-height: 1.8; }
+
+    /* =====================================================
+       BUTTONS
+    ===================================================== */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      height: 52px; padding: 0 30px; border: none; cursor: pointer;
+      font-family: var(--font-sans); font-size: 13px; font-weight: 700;
+      letter-spacing: 0.8px; text-transform: uppercase; transition: all 0.3s ease;
+      border-radius: var(--r-sm); white-space: nowrap;
+    }
+    .btn-gold {
+      background: var(--gold); color: var(--white);
+      box-shadow: 0 8px 24px rgba(255, 92, 0, 0.35);
+    }
+    .btn-gold:hover { background: #e05000; transform: translateY(-2px); box-shadow: 0 12px 32px rgba(255, 92, 0, 0.45); }
+    .btn-ghost-white { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.4); }
+    .btn-ghost-white:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); }
+    .btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+      transition: all 0.4s ease;
+    }
+
+    .topbar {
+      background: var(--navy); padding: 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .topbar-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 16px; color: rgba(255,255,255,0.75); font-weight: 600; letter-spacing: 0.2px;
+      white-space: nowrap; gap: 24px;
+    }
+    .topbar-inner a { color: var(--gold-light); transition: color 0.2s; }
+    .topbar-inner a:hover { color: var(--white); }
+
+    .nav-bar {
+      background: rgba(255,255,255,0.97); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 20px rgba(11, 25, 41, 0.05);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      min-height: 74px; gap: 32px;
+    }
+    .logo-mark { display: flex; flex-direction: column; gap: 3px; align-items: flex-start; }
+    .logo-mark strong { font-family: var(--font-serif); font-size: 26px; font-weight: 700; color: var(--navy); letter-spacing: -0.3px; line-height: 1; }
+    .logo-mark span { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); width: 100%; text-align: center; }
+
+    .main-nav { display: flex; align-items: center; gap: 28px; }
+    .main-nav a { font-size: 16px; font-weight: 600; color: var(--slate); letter-spacing: 0.2px; transition: color 0.25s; position: relative; padding-bottom: 2px; }
+    .main-nav a::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 0; height: 1px; background: var(--gold); transition: width 0.3s; }
+    .main-nav a:hover { color: var(--navy); }
+    .main-nav a:hover::after { width: 100%; }
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+    .hero {
+      min-height: 100svh; position: relative; overflow: hidden;
+      background: var(--navy);
+      display: grid;
+      padding-top: 112px;
+    }
+
+    .hero-bg-pattern {
+      position: absolute; inset: 0; z-index: 0;
+      background:
+        radial-gradient(ellipse 60% 70% at 80% 50%, rgba(255,92,0,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(28,49,80,0.8) 0%, transparent 50%);
+    }
+
+    .hero-grid {
+      position: relative; z-index: 2;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 0; align-items: stretch; flex: 1;
+    }
+
+    /* LEFT — copy */
+    .hero-copy {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 80px 60px 80px 0;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-size: 11px; font-weight: 700; letter-spacing: 2.5px;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 28px;
+    }
+    .hero-eyebrow span { width: 40px; height: 1px; background: var(--gold); }
+
+    .hero-copy h1 {
+      font-size: clamp(44px, 5.5vw, 68px); line-height: 1.05;
+      letter-spacing: -1px; color: var(--white); margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .hero-copy h1 em { color: var(--gold-light); font-style: italic; }
+
+    .hero-copy p { font-size: 16px; color: rgba(255,255,255,0.65); line-height: 1.85; max-width: 460px; margin-bottom: 36px; }
+
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+
+    /* RIGHT — image */
+    .hero-visual {
+      position: relative; overflow: hidden;
+      background: var(--navy-mid);
+    }
+    .hero-photo {
+      width: 100%; height: 100%; min-height: 600px;
+      object-fit: cover; object-position: center top;
+      opacity: 0.85;
+      filter: grayscale(8%);
+    }
+    .hero-visual-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to right, var(--navy) 0%, transparent 30%);
+    }
+
+    .hero-badge-card {
+      position: absolute; bottom: 36px; right: 30px;
+      background: rgba(255,255,255,0.96); backdrop-filter: blur(20px);
+      border-radius: var(--r-md); padding: 20px 24px;
+      border-top: 3px solid var(--gold);
+      box-shadow: var(--shadow-lg);
+      max-width: 240px;
+    }
+    .hero-badge-card strong { display: block; font-family: var(--font-serif); font-size: 17px; color: var(--navy); margin-bottom: 6px; font-weight: 700; }
+    .hero-badge-card p { font-size: 12.5px; color: var(--text-muted); line-height: 1.5; }
+
+    /* =====================================================
+       PILLARS (Trust indicators)
+    ===================================================== */
+    .pillars {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+    .pillars-inner {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+    }
+    .pillar-item {
+      padding: 32px 28px;
+      border-right: 1px solid var(--border);
+      display: flex; align-items: center; gap: 18px;
+    }
+    .pillar-item:last-child { border-right: none; }
+    .pillar-icon {
+      width: 48px; height: 48px; flex-shrink: 0;
+      border-radius: var(--r-sm); background: var(--gold-pale);
+      display: grid; place-items: center;
+    }
+    .pillar-icon svg { width: 22px; height: 22px; color: var(--gold); fill: currentColor; }
+    .pillar-text h4 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+    .pillar-text p { font-size: 13px; color: var(--text-muted); }
+
+    /* =====================================================
+       SPECIALTIES
+    ===================================================== */
+    .specialties { background: var(--cream); }
+
+    .spec-header { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 56px; }
+    .spec-header-right { text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
+
+    .spec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+    .spec-card {
+      background: var(--white); border-radius: var(--r-lg); overflow: hidden;
+      border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+      transition: all 0.4s ease; cursor: pointer;
+      display: flex; flex-direction: column;
+    }
+    .spec-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: var(--border-gold); }
+
+    .spec-img {
+      width: 100%; height: 200px; overflow: hidden; position: relative; flex-shrink: 0;
+    }
+    .spec-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .spec-card:hover .spec-img img { transform: scale(1.06); }
+    .spec-img-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(15,51,88,0.55) 100%);
+      transition: opacity 0.4s;
+    }
+
+    .spec-body { padding: 28px 26px 26px; display: flex; flex-direction: column; flex: 1; }
+
+    .spec-tag {
+      display: inline-block; padding: 5px 12px; border-radius: 4px;
+      font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+      background: var(--gold-pale); color: var(--gold);
+      margin-bottom: 14px; align-self: flex-start;
+    }
+    .spec-card h3 { font-size: 20px; color: var(--navy); margin-bottom: 10px; font-weight: 600; line-height: 1.25; }
+    .spec-card p { font-size: 13.5px; color: var(--text-muted); line-height: 1.7; margin-bottom: 18px; }
+    .spec-points { display: flex; flex-direction: column; gap: 8px; margin-top: auto; }
+    .spec-point { display: flex; align-items: flex-start; gap: 9px; font-size: 13px; }
+    .spec-point::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 6px; }
+    .spec-point span { color: var(--text-muted); }
+    .spec-pub-badge { margin-top: 18px; padding: 14px 16px; background: var(--gold-pale); border-radius: var(--r-sm); border-left: 3px solid var(--gold); display: flex; align-items: center; gap: 12px; }
+    .spec-pub-num { font-family: var(--font-serif); font-size: 28px; font-weight: 700; color: var(--navy); line-height: 1; flex-shrink: 0; }
+    .spec-pub-text strong { color: var(--navy); display: block; margin-bottom: 2px; font-size: 12px; }
+    .spec-pub-text span { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+    /* =====================================================
+       SURGICAL METHODS
+    ===================================================== */
+    .surgeries { background: var(--navy); overflow: hidden; position: relative; }
+
+    .surgeries::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 50% 80% at 100% 50%, rgba(255,92,0,0.07) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .surgeries .label { color: rgba(255,255,255,0.55); }
+    .surgeries .label::before { background: var(--gold); }
+    .surgeries .section-title { color: var(--white); }
+    .surgeries .section-sub { color: rgba(255,255,255,0.45); }
+
+
+    /* SURGERY CARDS */
+    .surg-strip {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 3px; margin-top: 40px;
+    }
+    .surg-cell {
+      position: relative; cursor: pointer; text-decoration: none;
+      display: flex; flex-direction: column; align-items: center;
+      border-right: 1px solid rgba(255,255,255,0.07);
+      transition: background 0.35s ease;
+      background: rgba(255,255,255,0.02);
+      overflow: hidden;
+    }
+    .surg-cell:last-child { border-right: none; }
+    .surg-cell:hover { background: rgba(255,92,0,0.12); }
+    .surg-cell-img { width: 100%; flex-shrink: 0; overflow: hidden; }
+    .surg-cell-img img { width: 100%; display: block; transition: transform 0.4s cubic-bezier(.175,.885,.32,1.275); }
+    .surg-cell:hover .surg-cell-img img { transform: scale(1.07); }
+    .surg-cell-line { width: 28px; height: 2px; background: rgba(255,255,255,0.15); margin: 10px auto 0; border-radius: 2px; transition: width 0.3s, background 0.3s; }
+    .surg-cell:hover .surg-cell-line { width: 44px; background: var(--gold); }
+    .surg-cell-title { font-size: 15px; font-weight: 700; color: rgba(255,255,255,0.97); text-align: center; line-height: 1.4; padding: 12px 12px 6px; transition: color 0.3s; }
+    .surg-cell:hover .surg-cell-title { color: #fff; }
+    .surg-cell-desc { font-size: 13.5px; text-align: center; line-height: 1.65; padding: 0 12px 10px; }
+
+    .surg-desc-preview {
+      color: rgba(255,255,255,0.72);
+      transition: opacity 0.3s ease, max-height 0.4s ease;
+      max-height: 60px; overflow: hidden;
+    }
+    .surg-desc-full {
+      color: rgba(255,255,255,0.0);
+      max-height: 0; overflow: hidden;
+      font-size: 13px; line-height: 1.65;
+      transition: max-height 0.45s ease, color 0.35s ease, opacity 0.35s ease;
+      opacity: 0;
+    }
+    .surg-cell:hover .surg-desc-preview {
+      opacity: 0; max-height: 0; overflow: hidden;
+    }
+    .surg-cell:hover .surg-desc-full {
+      max-height: 200px;
+      color: rgba(255,255,255,0.88);
+      opacity: 1;
+    }
+    .surg-cell-cta { font-size: 12px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--gold); padding: 0 8px 14px; text-align: center; opacity: 0; transform: translateY(5px); transition: opacity 0.3s, transform 0.3s; }
+    .surg-cell:hover .surg-cell-cta { opacity: 1; transform: translateY(0); }
+    @media (max-width: 768px) { .surg-strip { grid-template-columns: repeat(2, 1fr); } }
+
+    /* =====================================================
+       ACADEMIC PROFILE
+    ===================================================== */
+    .academic { background: var(--cream); overflow: hidden; }
+
+    .academic-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; align-items: start; }
+
+    .academic-sticky {
+      position: sticky; top: 90px;
+    }
+
+    .academic-photo-frame {
+      border-radius: var(--r-xl); overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+    .academic-photo-frame img { width: 100%; height: 520px; object-fit: cover; object-position: center 20%; }
+    .academic-photo-caption {
+      position: absolute; left: 20px; right: 20px; bottom: 20px;
+      background: rgba(11,25,41,0.88); backdrop-filter: blur(12px);
+      border-radius: var(--r-sm); padding: 16px 20px;
+      border-left: 3px solid var(--gold);
+    }
+    .academic-photo-caption strong { display: block; color: var(--white); font-size: 15px; margin-bottom: 4px; font-family: var(--font-serif); }
+    .academic-photo-caption span { font-size: 12px; color: rgba(255,255,255,0.55); letter-spacing: 0.5px; }
+
+    .academic-cards { display: flex; flex-direction: column; gap: 16px; }
+
+    .ac-card {
+      background: var(--white); border-radius: var(--r-md); padding: 28px 30px;
+      border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+    .ac-card:hover { box-shadow: var(--shadow-md); border-color: var(--border-gold); transform: translateX(4px); }
+    .ac-card-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+    .ac-card-icon { width: 40px; height: 40px; border-radius: 10px; background: var(--gold-pale); display: grid; place-items: center; flex-shrink: 0; }
+    .ac-card-icon svg { width: 18px; height: 18px; color: var(--gold); }
+    .ac-card h3 { font-family: var(--font-serif); font-size: 20px; color: var(--navy); font-weight: 600; }
+    .ac-card p { font-size: 14.5px; color: var(--text-muted); line-height: 1.75; }
+
+    /* Network gallery inside card */
+    .network-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
+    .network-item { border-radius: var(--r-sm); overflow: hidden; position: relative; height: 150px; }
+    .network-item img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.4s ease; }
+    .network-item:hover img { transform: scale(1.05); }
+    .network-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 12px 10px; background: linear-gradient(transparent, rgba(11,25,41,0.85)); color: rgba(255,255,255,0.9); font-size: 11px; font-weight: 600; line-height: 1.3; }
+
+    /* Books */
+    .books-row { display: flex; gap: 10px; margin-top: 16px; }
+    .book-item { flex: 1; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-md); }
+    .book-item img { width: 100%; height: 140px; object-fit: cover; }
+
+    /* =====================================================
+       CERTIFICATIONS
+    ===================================================== */
+    /* CERTS — high contrast, bold */
+    .certs {
+      background: #050D18;
+      color: var(--white);
+      position: relative; overflow: hidden;
+    }
+    .certs::before {
+      content: "";
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 20% 50%, rgba(255,92,0,0.12), transparent 55%),
+        radial-gradient(ellipse 40% 60% at 85% 20%, rgba(15,51,88,0.8), transparent 50%);
+      pointer-events: none;
+    }
+    .certs .container { position: relative; z-index: 2; }
+    .certs .label { color: var(--gold); }
+    .certs .label::before { background: var(--gold); }
+
+    .certs-logo-row {
+      display: flex; align-items: center; justify-content: center;
+      background: var(--white); border-radius: var(--r-lg);
+      padding: 32px 40px; margin-bottom: 40px;
+      box-shadow: 0 0 0 4px rgba(255,92,0,0.15), var(--shadow-lg);
+      cursor: pointer; overflow: hidden; position: relative;
+      transition: box-shadow 0.4s ease, transform 0.4s ease;
+    }
+    .certs-logo-row:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 0 4px rgba(255,92,0,0.35), 0 32px 64px rgba(15,51,88,0.2);
+    }
+    /* shimmer sweep */
+    .certs-logo-row::before {
+      content: '';
+      position: absolute; top: 0; left: -75%;
+      width: 50%; height: 100%;
+      background: linear-gradient(120deg, transparent 0%, rgba(255,92,0,0.12) 50%, transparent 100%);
+      transform: skewX(-20deg);
+      transition: none;
+    }
+    .certs-logo-row:hover::before {
+      animation: cert-shimmer 0.7s ease forwards;
+    }
+    @keyframes cert-shimmer {
+      0%   { left: -75%; }
+      100% { left: 130%; }
+    }
+    .certs-logo-row img {
+      max-height: 240px; width: auto; object-fit: contain;
+      transition: filter 0.4s ease, transform 0.4s ease;
+    }
+    .certs-logo-row:hover img {
+      filter: drop-shadow(0 4px 16px rgba(255,92,0,0.2));
+      transform: scale(1.02);
+    }
+
+    .certs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .cert-card {
+      background: linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--r-md); padding: 28px 22px;
+      transition: all 0.35s ease;
+      position: relative; overflow: hidden;
+    }
+    .cert-card::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: var(--gold); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+    .cert-card:hover { background: linear-gradient(135deg, rgba(255,92,0,0.14), rgba(255,92,0,0.04)); border-color: rgba(255,92,0,0.5); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(255,92,0,0.15); }
+    .cert-card:hover::before { transform: scaleX(1); }
+    .cert-initials {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 56px; height: 56px; border-radius: var(--r-sm);
+      background: var(--gold); 
+      font-family: var(--font-serif); font-size: 16px; font-weight: 700;
+      color: var(--white); margin-bottom: 18px;
+      box-shadow: 0 8px 24px rgba(255,92,0,0.4);
+    }
+    .cert-card h4 { font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 8px; line-height: 1.3; }
+    .cert-card p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.6; }
+
+    /* =====================================================
+       STATS BAR
+    ===================================================== */
+    .statsbar { background: var(--gold); padding: 48px 0; }
+    .statsbar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; text-align: center; }
+    .statsbar-item { padding: 12px; border-right: 1px solid rgba(255,255,255,0.2); }
+    .statsbar-item:last-child { border-right: none; }
+    .statsbar-item strong { display: block; font-family: var(--font-serif); font-size: 52px; font-weight: 600; color: var(--white); line-height: 1; margin-bottom: 8px; }
+    .statsbar-item span { font-size: 13px; color: rgba(255,255,255,0.75); font-weight: 500; letter-spacing: 0.3px; }
+    .statsbar-item a { color: inherit; border-bottom: 1px dotted rgba(255,255,255,0.4); }
+
+    /* =====================================================
+       PROCESS
+    ===================================================== */
+    .process { background: var(--white); }
+    .process-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+
+    .process-photo { border-radius: var(--r-xl); overflow: hidden; box-shadow: var(--shadow-lg); position: relative; }
+    .process-photo img { width: 100%; height: 540px; object-fit: cover; object-position: center; }
+    .process-photo-badge {
+      position: absolute; top: 24px; left: 24px;
+      background: var(--gold); color: var(--white);
+      padding: 10px 18px; border-radius: 6px;
+      font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    }
+
+    .timeline-steps { display: flex; flex-direction: column; gap: 0; }
+    .step-item {
+      display: flex; gap: 24px; padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+    .step-item:last-child { border-bottom: none; }
+    .step-item:hover { transform: translateX(6px); }
+    .step-num {
+      width: 44px; height: 44px; flex-shrink: 0;
+      border-radius: 50%; background: var(--gold-pale);
+      border: 1px solid var(--border-gold);
+      display: grid; place-items: center;
+      font-family: var(--font-serif); font-size: 19px; font-weight: 700;
+      color: var(--gold); transition: all 0.3s;
+    }
+    .step-item:hover .step-num { background: var(--gold); color: var(--white); border-color: var(--gold); }
+    .step-content h4 { font-family: var(--font-serif); font-size: 20px; color: var(--navy); margin-bottom: 8px; font-weight: 600; }
+    .step-content p { font-size: 14.5px; color: var(--text-muted); line-height: 1.7; }
+
+    /* =====================================================
+       FAQ
+    ===================================================== */
+    .faq { background: var(--cream); }
+    .faq-inner { max-width: 800px; margin-inline: auto; }
+    .faq-header { text-align: center; margin-bottom: 48px; }
+
+    .faq-item {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--r-md); margin-bottom: 12px; overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.3s;
+    }
+    .faq-item[open] { box-shadow: var(--shadow-md); border-color: var(--border-gold); }
+
+    summary {
+      list-style: none; cursor: pointer;
+      padding: 22px 26px; font-size: 15.5px; font-weight: 600; color: var(--navy);
+      display: flex; align-items: center; justify-content: space-between; gap: 20px;
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    .faq-icon { width: 28px; height: 28px; border-radius: 50%; background: var(--gold-pale); border: 1px solid var(--border-gold); display: grid; place-items: center; flex-shrink: 0; transition: all 0.3s; }
+    .faq-icon svg { width: 12px; height: 12px; color: var(--gold); transition: transform 0.3s; }
+    .faq-item[open] .faq-icon { background: var(--gold); }
+    .faq-item[open] .faq-icon svg { transform: rotate(45deg); color: var(--white); }
+    .faq-body { padding: 0 26px 22px; border-top: 1px solid var(--border); padding-top: 18px; color: var(--text-muted); font-size: 15px; line-height: 1.75; }
+
+    /* =====================================================
+       INSTAGRAM
+    ===================================================== */
+    .instagram { background: var(--white); }
+    .ig-box { max-width: 960px; margin-inline: auto; }
+    .ig-header { display: flex; align-items: center; justify-content: space-between; gap: 32px; margin-bottom: 32px; flex-wrap: wrap; }
+    .ig-title h3 { font-family: var(--font-serif); font-size: 32px; color: var(--navy); font-weight: 600; }
+    .ig-title p { font-size: 14px; color: var(--text-muted); margin-top: 6px; }
+    .ig-feed { border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--border); }
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+    .contact { background: url("toprak1.jpeg") center/cover no-repeat; position: relative; padding: 100px 0; }
+    .contact::before { content: ""; position: absolute; inset: 0; background: rgba(15,51,88,0.92); backdrop-filter: blur(2px); }
+    .contact .container { position: relative; z-index: 2; }
+    .contact-header { text-align: center; margin-bottom: 56px; }
+    .contact-header .label::before { background: var(--gold-light); }
+    .contact-header .label { color: var(--gold-light); }
+    .contact-header h2 { color: var(--white); font-size: clamp(36px, 4vw, 52px); margin-bottom: 14px; }
+    .contact-header p { color: rgba(255,255,255,0.5); font-size: 16px; max-width: 500px; margin-inline: auto; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 24px; align-items: stretch; }
+
+    .contact-info {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--r-lg); padding: 40px; display: flex; flex-direction: column; gap: 0;
+    }
+    .contact-info h3 { font-family: var(--font-serif); font-size: 26px; color: var(--white); margin-bottom: 28px; font-weight: 600; }
+    .info-row { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .info-row:last-child { border-bottom: none; }
+    .info-row label { display: block; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+    .info-row p { font-size: 15.5px; color: rgba(255,255,255,0.8); line-height: 1.55; }
+    .info-phone { font-family: var(--font-serif); font-size: 28px; color: var(--gold-light); font-weight: 600; }
+
+    .contact-form {
+      background: var(--white); border-radius: var(--r-lg); padding: 40px;
+      box-shadow: var(--shadow-lg);
+    }
+    .contact-form h3 { font-family: var(--font-sans); font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .contact-form .form-sub { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px; }
+    .form-group label { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--slate); }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      border: 1px solid var(--border); border-radius: var(--r-sm);
+      padding: 13px 16px; font-family: var(--font-sans); font-size: 14.5px;
+      color: var(--text); background: #FAFBFC; outline: none;
+      transition: all 0.25s ease;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold); background: var(--white);
+      box-shadow: 0 0 0 4px rgba(255,92,0,0.1);
+    }
+    .form-group textarea { min-height: 110px; resize: vertical; }
+    .form-note {
+      font-size: 12px; color: var(--text-muted); line-height: 1.65;
+      padding: 14px 16px; background: var(--gold-pale);
+      border-radius: var(--r-sm); border-left: 3px solid var(--gold);
+      margin-bottom: 20px;
+    }
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+    .site-footer {
+      background: #070F1A; padding: 40px 0;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .footer-grid { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 28px; }
+    .footer-logo strong { font-family: var(--font-serif); font-size: 20px; color: var(--white); display: block; margin-bottom: 4px; font-weight: 600; }
+    .footer-logo span { font-size: 12px; color: rgba(255,255,255,0.35); letter-spacing: 0.5px; }
+    .footer-nav { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-nav a { font-size: 13px; color: rgba(255,255,255,0.45); font-weight: 500; transition: color 0.2s; }
+    .footer-nav a:hover { color: var(--gold-light); }
+    .footer-legal { font-size: 12px; color: rgba(255,255,255,0.25); line-height: 1.75; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 24px; }
+
+    /* =====================================================
+       ANIMATIONS
+    ===================================================== */
+    .reveal { transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1 !important; transform: translateY(0) !important; }
+    .js-ready .reveal:not(.visible) { opacity: 0; transform: translateY(22px); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+
+    /* SCROLL TO TOP */
+    .scroll-top {
+      position: fixed; bottom: 32px; right: 32px; z-index: 800;
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--gold); color: white; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 8px 24px rgba(255,92,0,0.4);
+      opacity: 0; transform: translateY(16px);
+      transition: opacity 0.35s ease, transform 0.35s ease, background 0.2s;
+      pointer-events: none;
+    }
+    .scroll-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+    .scroll-top:hover { background: #e05000; box-shadow: 0 12px 32px rgba(255,92,0,0.5); }
+    .scroll-top svg { width: 20px; height: 20px; }
+    @media (max-width: 768px) { .scroll-top { bottom: 20px; right: 20px; width: 44px; height: 44px; } }
+
+
+    /* INSTAGRAM CTA BANNER */
+    .ig-cta-banner {
+      margin-top: 32px;
+      border-radius: var(--r-lg);
+      background: linear-gradient(135deg, #1a0533 0%, #2d0a4e 40%, #1a1a2e 100%);
+      border: 1px solid rgba(131,58,180,0.3);
+      padding: 40px 48px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 32px; flex-wrap: wrap;
+      position: relative; overflow: hidden;
+    }
+    .ig-cta-banner::before {
+      content: '';
+      position: absolute; top: -60px; right: -60px;
+      width: 240px; height: 240px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(252,176,69,0.15) 0%, rgba(253,29,29,0.1) 40%, transparent 70%);
+      pointer-events: none;
+    }
+    .ig-cta-banner::after {
+      content: '';
+      position: absolute; bottom: -40px; left: 10%;
+      width: 180px; height: 180px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(131,58,180,0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .ig-cta-text { position: relative; z-index: 2; }
+    .ig-cta-text .ig-cta-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      color: #fcb045; margin-bottom: 14px;
+    }
+    .ig-cta-text .ig-cta-tag::before { content: ''; width: 24px; height: 1px; background: #fcb045; }
+    .ig-cta-text h4 {
+      font-family: var(--font-serif); font-size: clamp(22px, 2.5vw, 30px);
+      font-weight: 600; color: #fff; line-height: 1.25; margin-bottom: 10px;
+    }
+    .ig-cta-text p { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.7; max-width: 480px; }
+    .ig-cta-btn {
+      position: relative; z-index: 2; flex-shrink: 0;
+      display: inline-flex; align-items: center; gap: 12px;
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      color: white; padding: 16px 32px; border-radius: var(--r-md);
+      font-size: 15px; font-weight: 700; text-decoration: none;
+      box-shadow: 0 8px 32px rgba(131,58,180,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      white-space: nowrap;
+    }
+    .ig-cta-btn:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(131,58,180,0.55); }
+    .ig-cta-btn svg { width: 22px; height: 22px; fill: white; flex-shrink: 0; }
+    .ig-cta-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px; padding: 5px 14px; font-size: 12px; font-weight: 600;
+      color: rgba(255,255,255,0.7); margin-top: 12px;
+    }
+    .ig-cta-pill::before { content: '●'; color: #4ade80; font-size: 8px; }
+
+    /* PHONE TOOLTIP */
+    .phone-btn-wrap { position: relative; }
+    .phone-tooltip {
+      position: absolute; top: calc(100% + 10px); left: 50%;
+      transform: translateX(-50%) translateY(4px);
+      background: var(--navy); border: 1px solid rgba(255,92,0,0.35);
+      border-radius: var(--r-sm); padding: 8px 14px;
+      display: flex; flex-direction: column; align-items: center; gap: 2px;
+      white-space: nowrap; pointer-events: none;
+      opacity: 0; transition: opacity 0.2s ease, transform 0.2s ease;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2); z-index: 999;
+    }
+    .phone-tooltip::before {
+      content: ''; position: absolute; top: -5px; left: 50%;
+      transform: translateX(-50%);
+      width: 0; height: 0;
+      border-left: 5px solid transparent; border-right: 5px solid transparent;
+      border-bottom: 5px solid rgba(255,92,0,0.35);
+    }
+    .phone-tooltip span { font-size: 15px; font-weight: 700; color: var(--gold); font-family: var(--font-serif); }
+    .phone-tooltip small { font-size: 11px; color: rgba(255,255,255,0.55); }
+    .phone-btn-wrap:hover .phone-tooltip { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* =====================================================
+       RESPONSIVE
+    ===================================================== */
+    @media (max-width: 1100px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-copy { padding: 60px 0 40px; }
+      .hero-visual { min-height: 400px; }
+      .academic-grid, .process-grid, .contact-grid { grid-template-columns: 1fr; }
+      .academic-sticky { position: static; }
+      .spec-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .container { width: calc(100% - 32px); }
+      .section { padding: 72px 0; }
+      .topbar { display: none; }
+      .main-nav { display: none; }
+      .nav-inner { padding: 0 4%; }
+      .pillars-inner { grid-template-columns: 1fr 1fr; }
+      .pillar-item { border-bottom: 1px solid var(--border); }
+      .spec-grid { grid-template-columns: 1fr; }
+      .certs-grid { grid-template-columns: 1fr 1fr; }
+      .statsbar-item { border-bottom: 1px solid rgba(255,255,255,0.15); }
+      .spec-header { grid-template-columns: 1fr; }
+      .spec-header-right { align-items: flex-start; text-align: left; }
+      .form-row { grid-template-columns: 1fr; }
+      .certs-grid { grid-template-columns: 1fr 1fr; }
+      .network-grid { grid-template-columns: 1fr 1fr; }
+      .books-row { flex-direction: column; }
+      .footer-grid { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Prof. Dr. İbrahim Toprak",
+    "url": "https://ibrahimtoprak.com",
+    "image": "https://ibrahimtoprak.com/toprak.jpeg",
+    "description": "Ophthalmology faculty member at Pamukkale University. Specialist in keratoconus, cataract, laser refractive surgery and glaucoma.",
+    "jobTitle": "Professor, Ophthalmologist",
+    "medicalSpecialty": "Ophthalmology",
+    "worksFor": {
+      "@type": "Hospital",
+      "name": "Pamukkale Üniversitesi Tıp Fakültesi Hastanesi",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kınıklı Kampüsü",
+        "addressLocality": "Denizli",
+        "addressCountry": "TR"
+      }
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Pamukkale Üniversitesi Tıp Fakültesi Hastanesi, Göz Hastalıkları ABD, Kınıklı Kampüsü",
+      "addressLocality": "Denizli",
+      "addressCountry": "TR"
+    },
+    "telephone": "+904444747",
+    "email": "itoprak@pau.edu.tr",
+    "sameAs": [
+      "https://www.instagram.com/prof.dr.ibrahimtoprak",
+      "https://www.researchgate.net/profile/Ibrahim-Toprak",
+      "https://scholar.google.com/citations?user=lllerFgAAAAJ"
+    ],
+    "knowsAbout": [
+      "Keratokonus",
+      "Çapraz Bağlama (Cross-Linking)",
+      "Lazer Refraktif Cerrahi",
+      "LASIK",
+      "PRK",
+      "No-Touch Laser",
+      "Katarakt Cerrahisi",
+      "Fakik Göz İçi Lens",
+      "Kornea Hastalıkları",
+      "Glokom"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- =====================================================
+       SITE HEADER
+  ===================================================== -->
+  <header class="site-header" id="site-header">
+
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Pamukkale University Faculty of Medicine — Department of Ophthalmology</span>
+        <div>
+          <script>document.write('<a href="mailto:itoprak@pau.edu.tr">itoprak@pau.edu.tr</a>')</script>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-bar">
+      <div class="container nav-inner">
+        <a href="#" class="logo-mark">
+          <strong>Prof. Dr. İbrahim Toprak</strong>
+          <span>Ophthalmologist</span>
+        </a>
+
+        <nav class="main-nav">
+          <a href="#alanlar">Specialties</a>
+          <a href="#cerrahi">Surgeries</a>
+          <a href="#akademik">Academic Profile</a>
+          <a href="#surec">Consultation</a>
+          <a href="#iletisim">Contact</a>
+        </nav>
+
+        <div style="display:flex;align-items:center;gap:10px;">
+          <a href="/" title="Türkçeye Geç" style="font-size:11px;font-weight:700;color:var(--slate);border:1px solid var(--border);padding:5px 10px;border-radius:var(--r-sm);transition:all 0.2s;text-decoration:none;white-space:nowrap;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--slate)'">TR</a>
+          <div style="position:relative;" class="phone-btn-wrap">
+            <a href="tel:+904444747"
+               style="display:inline-flex;align-items:center;justify-content:center;
+                      width:42px;height:42px;border-radius:var(--r-sm);
+                      background:rgba(255,92,0,0.1);border:1px solid rgba(255,92,0,0.3);
+                      color:var(--gold);transition:all 0.3s;flex-shrink:0;text-decoration:none;"
+               onmouseover="this.style.background='var(--gold)';this.style.color='white';this.style.borderColor='var(--gold)'"
+               onmouseout="this.style.background='rgba(255,92,0,0.1)';this.style.color='var(--gold)';this.style.borderColor='rgba(255,92,0,0.3)'">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.5 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </a>
+            <div class="phone-tooltip">
+              <span>444 47 47</span>
+              <small>Dahili: 4610</small>
+            </div>
+          </div>
+          <a href="#iletisim" class="btn btn-gold" style="height:42px;font-size:12px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+            <span>Book Appointment</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- =====================================================
+       HERO
+  ===================================================== -->
+  <section class="hero" id="top">
+    <div class="hero-bg-pattern"></div>
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+        <p role="heading" aria-level="1" style="font-family:var(--font-serif); font-size:clamp(28px,4.2vw,56px); font-weight:600; color:var(--white); letter-spacing:-0.5px; margin-bottom:10px; line-height:1.05; white-space:nowrap;">Prof. Dr. İbrahim Toprak</p>
+        <div class="hero-eyebrow">
+          <span></span>
+          Cornea · Cataract · Refractive Surgery · Glaucoma
+        </div>
+        <h1>
+          Scientific depth,<br>
+          <em>trusted expertise</em>,<br>
+          in eye health
+        </h1>
+        <p>
+<span>Combining advanced diagnostic technology, international academic expertise and personalised surgical planning — all centred around patient safety.</span>
+        </p>
+        <div class="hero-actions">
+          <a href="#iletisim" class="btn btn-gold">Book Appointment</a>
+          <a href="#alanlar" class="btn btn-ghost-white">Specialties</a>
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+        <img class="hero-photo" src="toprak.jpeg" alt="Prof. Dr. İbrahim Toprak">
+        <div class="hero-visual-overlay"></div>
+        <div class="hero-badge-card">
+          <strong>Personalised Approach</strong>
+          <p>Every eye is unique. A scientific and ethical process from diagnosis to treatment.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       PILLARS
+  ===================================================== -->
+  <div class="pillars">
+    <div class="pillars-inner container">
+      <div class="pillar-item reveal">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm1 14.93V17a1 1 0 01-2 0v-.07A8.001 8.001 0 0112 4a8 8 0 011 15.93z" opacity=".3"/><path d="M12 6a1 1 0 011 1v5.586l2.707 2.707a1 1 0 01-1.414 1.414l-3-3A1 1 0 0111 13V7a1 1 0 011-1z"/></svg>
+        </div>
+        <div class="pillar-text">
+          <h4>Extensive Experience</h4>
+          <p>20+ Years · 10,000+ Surgeries</p>
+        </div>
+      </div>
+      <div class="pillar-item reveal reveal-delay-1">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-4-4 1.41-1.41L11 14.17l6.59-6.59L19 9l-8 8z"/></svg>
+        </div>
+        <div class="pillar-text">
+          <h4>International Credentials</h4>
+          <p>FEBO · FICO · MRCSEd</p>
+        </div>
+      </div>
+      <div class="pillar-item reveal reveal-delay-2">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+        </div>
+        <div class="pillar-text">
+          <h4>Scientific Productivity</h4>
+          <p>70+ Published Articles</p>
+        </div>
+      </div>
+      <div class="pillar-item reveal reveal-delay-3">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        </div>
+        <div class="pillar-text">
+          <h4>Patient Safety</h4>
+          <p>Evidence-Based & Ethical Decisions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       CERTIFICATIONS
+  ===================================================== -->
+  <section class="certs section" id="sertifikalar">
+    <div class="container">
+      <div class="label">International Credentials</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:end; margin-bottom:40px;">
+        <h2 class="section-title reveal" style="color:var(--white);">Globally Accredited<br>Standards</h2>
+        <p class="section-sub reveal" style="color:rgba(255,255,255,0.55);">The world's most prestigious ophthalmology and surgical institution credentials — proof of science and trust.</p>
+      </div>
+
+      <div class="certs-logo-row reveal">
+        <img src="sertifikalar.webp" alt="Uluslararası Yeterlilik Belgeleri">
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-initials">TOD</div>
+          <h4>Turkish Ophthalmology Society</h4>
+          <p>Promoting scientific advancement and professional ethics at the highest level.</p>
+          <div style="margin-top:14px; display:flex; flex-direction:column; gap:7px;">
+            <div style="display:flex; align-items:center; gap:8px; font-size:12px; color:rgba(255,255,255,0.7);">
+              <span style="width:6px; height:6px; border-radius:50%; background:var(--gold); flex-shrink:0; display:block;"></span>
+              <span>Cornea &amp; Ocular Surface Unit</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px; font-size:12px; color:rgba(255,255,255,0.7);">
+              <span style="width:6px; height:6px; border-radius:50%; background:var(--gold); flex-shrink:0; display:block;"></span>
+              <span>Cataract &amp; Refractive Surgery Unit</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-initials">EBO</div>
+          <h4>European Board of Ophthalmology</h4>
+          <p>European-standard ophthalmology qualification.</p>
+        </div>
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-initials">ICO</div>
+          <h4>International Council of Ophthalmology</h4>
+          <p>International clinical competency certificate in ophthalmology.</p>
+        </div>
+        <div class="cert-card reveal reveal-delay-3">
+          <div class="cert-initials">RCS</div>
+          <h4>Royal College of Surgeons of Edinburgh</h4>
+          <p>MRCSEd — membership of an internationally recognised surgical institution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       SPECIALTIES
+  ===================================================== -->
+  <section class="specialties section" id="alanlar">
+    <div class="container">
+      <div class="spec-header">
+        <div>
+          <div class="label">Areas of Expertise</div>
+          <h2 class="section-title reveal">Every Eye Is Different —<br><em style="font-style:italic;color:var(--gold);">So Is Your Treatment</em></h2>
+        </div>
+        <div class="spec-header-right">
+          <p class="section-sub reveal">Each eye is unique. Our evaluation approach prioritises long-term visual quality and safe treatment choices.</p>
+        </div>
+      </div>
+
+      <div class="spec-grid">
+
+        <div class="spec-card reveal">
+          <div class="spec-img">
+            <img src="keratokonus.jpeg" alt="Keratokonus">
+            <div class="spec-img-overlay"></div>
+          </div>
+          <div class="spec-body">
+          <div class="spec-tag">Special Interest</div>
+          <h3>Keratoconus and Cross-Linking</h3>
+          <p>Keratoconus typically begins in adolescence and can progress silently into the 40s. If left undetected, it may lead to corneal transplantation. Constantly changing spectacle prescriptions or persistent blurred vision can be warning signs. When cross-linking is applied in the early stages, disease progression can largely be brought under control.</p>
+          <div class="spec-points">
+            <div class="spec-point"><span>Keratoconus screening and close monitoring</span></div>
+            <div class="spec-point"><span>Standard cross-linking approaches</span></div>
+            <div class="spec-point"><span>Cretan and Athens protocol</span></div>
+            <div class="spec-point"><span>Intracorneal ring planning</span></div>
+          </div>
+          <div class="spec-pub-badge">
+            <div class="spec-pub-num">20+</div>
+            <div class="spec-pub-text"><strong>International Publications</strong><span>Original research published in peer-reviewed journals on keratoconus diagnosis and treatment.</span></div>
+          </div>
+          
+          
+          </div>
+        </div>
+
+        <div class="spec-card reveal reveal-delay-1">
+          <div class="spec-img">
+            <img src="laser1.webp" alt="Lazer Cerrahi">
+            <div class="spec-img-overlay"></div>
+          </div>
+          <div class="spec-body">
+          <div class="spec-tag">Laser Surgery</div>
+          <h3>Laser Refractive Surgery</h3>
+          <p>Laser surgery for spectacle independence is not suitable for everyone. Performed without careful evaluation of corneal thickness, topographic maps and dry eye parameters, laser treatment can cause permanent visual problems. Correct patient selection is the single most important factor for long-term satisfaction — this decision should be made together, with the right data.</p>
+          <div class="spec-points">
+            <div class="spec-point"><span>Detailed topography and thickness analysis</span></div>
+            <div class="spec-point"><span>Personalised suitability assessment</span></div>
+            <div class="spec-point"><span>Alternative planning for high-risk eyes</span></div>
+            <div class="spec-point"><span>Long-term visual quality focus</span></div>
+          </div>
+          <div class="spec-pub-badge">
+            <div class="spec-pub-num" style="font-size:22px;">📄</div>
+            <div class="spec-pub-text"><strong>Preoperative Assessment Research</strong><span>Peer-reviewed publications on pre-laser patient selection and risk analysis.</span></div>
+          </div>
+          
+          
+          </div>
+        </div>
+
+        <div class="spec-card reveal reveal-delay-2">
+          <div class="spec-img">
+            <img src="akillilens.jpeg" alt="Akıllı Lens">
+            <div class="spec-img-overlay"></div>
+          </div>
+          <div class="spec-body">
+          <div class="spec-tag">Cataract &amp; Premium Lens</div>
+            <h3>Cataract and Premium Lens</h3>
+            <p>Expectation management and biometric precision are paramount in FAKO surgery and premium intraocular lens selection. As each patient's visual needs and lifestyle differ, trifocal, toric and EDOF lenses are planned with the correct indication and a personalised evaluation.</p>
+            <div class="spec-points">
+              <div class="spec-point"><span>FAKO (sutureless cataract surgery)</span></div>
+              <div class="spec-point"><span>Monofocal, EDOF, Trifocal and toric lens selection</span></div>
+              <div class="spec-point"><span>Lifestyle-based lens planning</span></div>
+              <div class="spec-point"><span>Postoperative visual quality follow-up</span></div>
+            </div>
+          
+          
+          </div>
+        </div>
+
+        <div class="spec-card reveal">
+          <div class="spec-img">
+            <img src="topografi.webp" alt="Kornea Topografi">
+            <div class="spec-img-overlay"></div>
+          </div>
+          <div class="spec-body">
+          <div class="spec-tag">Advanced Cornea</div>
+          <h3>Corneal Diseases and Surgery</h3>
+          <p>Corneal diseases often progress silently; ignoring symptoms such as burning, light sensitivity or blurred vision can worsen the condition. Spanning a wide spectrum from infections and dystrophies to surface disorders and transplant-requiring cases, early evaluation in this field opens significantly broader treatment options.</p>
+          <div class="spec-points">
+            <div class="spec-point"><span>Diagnosis of corneal surface disorders</span></div>
+            <div class="spec-point"><span>Advanced corneal surgery planning</span></div>
+            <div class="spec-point"><span>Corneal transplant evaluation</span></div>
+            <div class="spec-point"><span>Scientific and ethical decision process</span></div>
+          </div>
+          
+          
+          </div>
+        </div>
+
+        <div class="spec-card reveal reveal-delay-1">
+          <div class="spec-img">
+            <img src="fakik2.webp" alt="Fakik Lens" style="object-position:center 30%;">
+            <div class="spec-img-overlay"></div>
+          </div>
+          <div class="spec-body">
+          <div class="spec-tag">Advanced Intraocular</div>
+          <h3>Phakic IOL (Implantable Contact Lens)</h3>
+          <p>In high myopia where laser cannot be applied or the corneal structure is unsuitable, phakic intraocular lenses offer a safe and permanent alternative. The natural lens is left untouched, keeping future treatment options open. If your prescription is high and you are unsure about laser suitability, an evaluation may open new horizons.</p>
+          <div class="spec-points">
+            <div class="spec-point"><span>High myopia evaluation</span></div>
+            <div class="spec-point"><span>Alternative for those unsuitable for laser</span></div>
+            <div class="spec-point"><span>Advanced technology lens planning</span></div>
+            <div class="spec-point"><span>Relatively rapid recovery process expected</span></div>
+          </div>
+          
+          
+          </div>
+        </div>
+
+        <div class="spec-card reveal reveal-delay-2">
+          <div class="spec-img">
+            <img src="glokom1.jpeg" alt="Glokom Açısı">
+            <div class="spec-img-overlay"></div>
+          </div>
+          <div class="spec-body">
+          <div class="spec-tag">Glaucoma</div>
+          <h3>Glaucoma (Intraocular Pressure)</h3>
+          <p>Glaucoma is a disease that silently and irreversibly damages the optic nerve. Once symptoms are noticed, the lost visual field cannot be recovered. Regular examination is vital for those over 40, with a family history of glaucoma or elevated intraocular pressure — early diagnosis is the most powerful tool in treatment.</p>
+          <div class="spec-points">
+            <div class="spec-point"><span>Detailed examination and OCT evaluation</span></div>
+            <div class="spec-point"><span>Intraocular pressure control and monitoring</span></div>
+            <div class="spec-point"><span>Trabeculectomy surgery</span></div>
+            <div class="spec-point"><span>Ahmed Glaucoma Valve Implantation</span></div>
+          </div>
+          
+          
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       SURGICAL METHODS
+  ===================================================== -->
+  <section class="surgeries section" id="cerrahi">
+    <div class="container">
+      <div class="label">Surgeries</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:end;">
+        <h2 class="section-title reveal" style="color:var(--white);">Every Eye Unique,<br><em style="font-style:italic; color:var(--gold-light);">Every Surgery Precise</em></h2>
+        <p class="section-sub reveal">Evidence-based surgical procedures supported by current technology.</p>
+      </div>
+
+            <div class="surg-strip reveal">
+        <a href="https://www.instagram.com/reel/DQXFTWZDHTe/" target="_blank" rel="noopener noreferrer" class="surg-cell">
+          <div class="surg-cell-img"><img src="1.png" alt="No-Touch Laser &amp; PRK"></div>
+          <div class="surg-cell-line"></div>
+          <div class="surg-cell-title">No-Touch Laser &amp; PRK</div>
+          <div class="surg-cell-desc">
+            <div class="surg-desc-preview">In PRK the surface is mechanically abraded; in No-Touch PRK the entire procedure is performed with laser.</div>
+            <div class="surg-desc-full">In PRK the surface is mechanically abraded; in No-Touch PRK the entire procedure is performed with laser. Frequently preferred in those with thin corneas or who practise contact sports. Visual outcomes are comparable to LASIK; the risk of dry eye and ectasia is scientifically lower.</div>
+          </div>
+          <div class="surg-cell-cta">▶ Watch Video</div>
+        </a>
+        <a href="https://www.instagram.com/prof.dr.ibrahimtoprak" target="_blank" rel="noopener noreferrer" class="surg-cell">
+          <div class="surg-cell-img"><img src="2.png" alt="LASIK &amp; Femto-LASIK"></div>
+          <div class="surg-cell-line"></div>
+          <div class="surg-cell-title">LASIK &amp; Femto-LASIK</div>
+          <div class="surg-cell-desc">
+            <div class="surg-desc-preview">A thin flap is lifted on the corneal surface and laser is applied.</div>
+            <div class="surg-desc-full">A thin flap is lifted on the corneal surface and laser is applied. Recovery is relatively rapid; however, suitability is determined by a comprehensive pre-operative evaluation.</div>
+          </div>
+          <div class="surg-cell-cta">▶ Instagram</div>
+        </a>
+        <a href="https://www.instagram.com/reel/DQFFxuejP_6/" target="_blank" rel="noopener noreferrer" class="surg-cell">
+          <div class="surg-cell-img"><img src="3.png" alt="Crosslink (Cretan/Atina)"></div>
+          <div class="surg-cell-line"></div>
+          <div class="surg-cell-title">Crosslink (Cretan/Athens)</div>
+          <div class="surg-cell-desc">
+            <div class="surg-desc-preview">The cornea is strengthened with riboflavin and UV rays in an attempt to halt keratoconus.</div>
+            <div class="surg-desc-full">The cornea is strengthened with riboflavin and UV rays to halt keratoconus. Scientific studies show that the Cretan and Athens protocols have greater potential for visual acuity improvement compared to standard cross-linking.</div>
+          </div>
+          <div class="surg-cell-cta">▶ Watch Video</div>
+        </a>
+        <a href="https://www.instagram.com/prof.dr.ibrahimtoprak" target="_blank" rel="noopener noreferrer" class="surg-cell">
+          <div class="surg-cell-img"><img src="4.png" alt="Femto-Lazer &amp; Kornea İçi Halka"></div>
+          <div class="surg-cell-line"></div>
+          <div class="surg-cell-title">Femto-Laser &amp; Intracorneal Ring</div>
+          <div class="surg-cell-desc">
+            <div class="surg-desc-preview">Intrastromal rings reshape corneal geometry in keratoconus.</div>
+            <div class="surg-desc-full">Intrastromal rings reshape corneal geometry in keratoconus. The need for optical correction may decrease; results vary depending on the patient and disease stage.</div>
+          </div>
+          <div class="surg-cell-cta">▶ Instagram</div>
+        </a>
+        <a href="https://www.instagram.com/prof.dr.ibrahimtoprak" target="_blank" rel="noopener noreferrer" class="surg-cell">
+          <div class="surg-cell-img"><img src="5.png" alt="Katarakt &amp; Akıllı Lens"></div>
+          <div class="surg-cell-line"></div>
+          <div class="surg-cell-title">Cataract &amp; Premium Lens</div>
+          <div class="surg-cell-desc">
+            <div class="surg-desc-preview">The lens that has lost transparency is extracted by FAKO technique and replaced with an intraocular lens.</div>
+            <div class="surg-desc-full">The lens that has lost transparency is extracted by FAKO technique and replaced with an intraocular lens. Multifocal lenses ('premium lens') can be considered after comprehensive evaluation of examination findings and patient expectations.</div>
+          </div>
+          <div class="surg-cell-cta">▶ Instagram</div>
+        </a>
+        <a href="https://www.instagram.com/prof.dr.ibrahimtoprak" target="_blank" rel="noopener noreferrer" class="surg-cell">
+          <div class="surg-cell-img"><img src="6.png" alt="Fakik Göz İçi Lensler (ICL)"></div>
+          <div class="surg-cell-line"></div>
+          <div class="surg-cell-title">Phakic IOL (ICL)</div>
+          <div class="surg-cell-desc">
+            <div class="surg-desc-preview">A phakic intraocular lens (ICL etc.) is placed inside the eye without touching the natural lens.</div>
+            <div class="surg-desc-full">A phakic intraocular lens (ICL etc.) is placed inside the eye without touching the natural lens. Preferred in high myopia or corneal structures unsuitable for laser. Suitability requires detailed pre-operative evaluation.</div>
+          </div>
+          <div class="surg-cell-cta">▶ Instagram</div>
+        </a>
+        <a href="https://www.instagram.com/prof.dr.ibrahimtoprak" target="_blank" rel="noopener noreferrer" class="surg-cell">
+          <div class="surg-cell-img"><img src="7.png" alt="Kornea Nakli (Keratoplasti)"></div>
+          <div class="surg-cell-line"></div>
+          <div class="surg-cell-title">Corneal Transplant (Keratoplasty)</div>
+          <div class="surg-cell-desc">
+            <div class="surg-desc-preview">Corneal transplantation (keratoplasty) aims at optical and anatomical reconstruction.</div>
+            <div class="surg-desc-full">Corneal transplantation (keratoplasty) aims at optical and anatomical reconstruction. Outcomes depend on the underlying pathology and surgical technique.</div>
+          </div>
+          <div class="surg-cell-cta">▶ Instagram</div>
+        </a>
+        <a href="https://www.instagram.com/reel/DQ7SGZxjE6e/" target="_blank" rel="noopener noreferrer" class="surg-cell">
+          <div class="surg-cell-img"><img src="8.png" alt="Glokom Cerrahisi"></div>
+          <div class="surg-cell-line"></div>
+          <div class="surg-cell-title">Glaucoma Surgery</div>
+          <div class="surg-cell-desc">
+            <div class="surg-desc-preview">Trabeculectomy or Ahmed valve surgery aims to bring intraocular pressure to target levels.</div>
+            <div class="surg-desc-full">Trabeculectomy or Ahmed valve surgery aims to bring intraocular pressure to target levels. The goal is to preserve existing optic nerve function.</div>
+          </div>
+          <div class="surg-cell-cta">▶ Watch Video</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ACADEMIC PROFILE -->
+  <section class="academic section" id="akademik">
+    <div class="container">
+      <div class="label">Academic Profile</div>
+      <div class="academic-grid">
+
+        <!-- SOL: Fotoğraf + 2 kısa kart -->
+        <div class="academic-sticky">
+          <h2 class="section-title reveal" style="margin-bottom:28px;">International Experience,<br><em style="font-style:italic; color:var(--gold);">Human-Centred Touch</em></h2>
+          <div class="academic-photo-frame reveal">
+            <img src="ameliyat1.webp" alt="Prof. Dr. İbrahim Toprak — Ameliyathane">
+            <div class="academic-photo-caption">
+              <strong>Prof. Dr. İbrahim Toprak</strong>
+              <span>Clinical Authority · Surgical Precision</span>
+            </div>
+          </div>
+
+          <div class="ac-card reveal" style="margin-top:16px;">
+            <div class="ac-card-head">
+              <div class="ac-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <h3>Conference Presentations</h3>
+            </div>
+            <p>Invited speaker at national and international congresses, sharing scientific expertise.</p>
+            <div style="margin-top:16px;">
+              <img src="present1.jpeg" alt="Kongre Sunumu" style="border-radius:var(--r-sm); width:100%; height:180px; object-fit:cover; object-position:center top;">
+            </div>
+          </div>
+
+          <div class="ac-card reveal" style="margin-top:16px;">
+            <div class="ac-card-head">
+              <div class="ac-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+              </div>
+              <h3>Book Chapters &amp; Scientific Contributions</h3>
+            </div>
+            <p>Peer reviewer for prestigious international ophthalmology journals, and author of comprehensive book chapters.</p>
+            <div class="books-row">
+              <div class="book-item"><img src="kitap2.jpeg" alt="Albert's Principles"></div>
+              <div class="book-item"><img src="kitap1.jpeg" alt="History of Refractive Surgery"></div>
+              <div class="book-item"><img src="kitap3.jpeg" alt="Lazer Refraktif Cerrahi"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SAĞ: 3 uzun kart -->
+        <div class="academic-cards">
+
+          <div class="ac-card reveal">
+            <div class="ac-card-head">
+              <div class="ac-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <h3>Education and Academic Journey</h3>
+            </div>
+            <p>He completed his medical education at Dokuz Eylul University and his specialty training at Pamukkale University, where he subsequently attained the titles of Associate Professor and Professor.</p>
+            <p style="margin-top:12px;">The most important step that brought his academic journey to the international arena was at <strong>Vissum Ophthalmology Institute</strong>in Alicante, Spain. With one of the world's leading authorities in Cornea, Cataract and Refractive Surgery, <strong>Prof. Dr. Jorge Alio</strong> this fellowship shaped his clinical vision on a global scale.</p>
+            <p style="margin-top:12px;">He subsequently visited the clinic of <strong>Prof. Dr. Massimo Busin</strong>in Forlì (Italy), a pioneer in lamellar corneal surgery, and the centre of <strong>Prof. Dr. Suphi Taneri</strong>in Münster (Germany), a European reference in laser refractive surgery, consolidating his advanced field-based training. <strong>Prof. Dr. Dan Z. Reinstein</strong> and other leading figures in the world of ophthalmology, ongoing academic collaborations ensure the direct translation of current knowledge into clinical practice.</p>
+          </div>
+
+          <div class="ac-card reveal reveal-delay-1">
+            <div class="ac-card-head">
+              <div class="ac-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+              </div>
+              <h3>International Scientific Network</h3>
+            </div>
+            <p>Academic collaborations with global authorities shaping the world of ophthalmology, and international sharing of scientific expertise.</p>
+            <div class="network-grid">
+              <div class="network-item">
+                <img src="alio.jpeg" alt="Prof. Dr. Jorge Alio ile">
+                <div class="network-label">Prof. Dr. Jorge Alio ile</div>
+              </div>
+              <div class="network-item">
+                <img src="alioreinstein.jpeg" alt="ESCRS — Alio ve Reinstein ile">
+                <div class="network-label">ESCRS — Alio &amp; Reinstein ile</div>
+              </div>
+              <div class="network-item">
+                <img src="busin.jpeg" alt="Prof. Dr. Massimo Busin ile">
+                <div class="network-label">Prof. Dr. Massimo Busin ile</div>
+              </div>
+              <div class="network-item">
+                <img src="taneri.jpeg" alt="Prof. Dr. Suphi Taneri ile">
+                <div class="network-label">Prof. Dr. Suphi Taneri ile</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ac-card reveal">
+            <div class="ac-card-head">
+              <div class="ac-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6M9 16h6M9 8h6M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"/></svg>
+              </div>
+              <h3>Scientific Publications</h3>
+            </div>
+            <p>Numerous original research articles published in international peer-reviewed journals in keratoconus, refractive surgery and corneal fields.</p>
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-top:18px; padding:18px 20px; background:var(--gold-pale); border-radius:var(--r-sm); border-left:3px solid var(--gold);">
+              <div>
+                <div style="font-family:var(--font-serif); font-size:40px; font-weight:700; color:var(--navy); line-height:1;">70+</div>
+                <div style="font-size:12px; color:var(--text-muted); font-weight:600; letter-spacing:0.5px; margin-top:4px;">Published Articles</div>
+              </div>
+              <a href="https://www.researchgate.net/profile/Ibrahim-Toprak" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:8px; background:var(--navy); color:var(--white); padding:12px 20px; border-radius:var(--r-sm); font-size:13px; font-weight:700; transition:all 0.3s;" onmouseover="this.style.background='var(--gold)'" onmouseout="this.style.background='var(--navy)'">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                ResearchGate Profile
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       STATS BAR
+  ===================================================== -->
+  <div class="statsbar">
+    <div class="container statsbar-grid">
+      <div class="statsbar-item reveal">
+        <strong>20+</strong>
+        <span>Years of Clinical Experience</span>
+      </div>
+      <div class="statsbar-item reveal reveal-delay-1">
+        <strong>70+</strong>
+        <span>Published Articles</span>
+      </div>
+      <div class="statsbar-item reveal reveal-delay-2">
+        <strong><a href="https://scholar.google.com/citations?user=lllerFgAAAAJ&hl=tr&oi=ao" target="_blank" rel="noopener noreferrer">800+</a></strong>
+        <span>Scientific Citations</span>
+      </div>
+      <div class="statsbar-item reveal reveal-delay-3">
+        <strong>10.000+</strong>
+        <span>Surgical Experience</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       PROCESS
+  ===================================================== -->
+  <section class="process section" id="surec">
+    <div class="container">
+      <div class="label">Consultation</div>
+      <div class="process-grid">
+
+        <div class="process-photo reveal">
+          <img src="biomicroscopy.jpeg" alt="Hasta Muayenesi">
+          <div class="process-photo-badge">Clinical Approach</div>
+        </div>
+
+        <div>
+          <h2 class="section-title reveal" style="margin-bottom:10px;">Starting With Listening,<br>Sustained With Care</h2>
+          <p class="section-sub reveal" style="margin-bottom:36px;">A process that begins by listening to the patient, leading to the right treatment decision within detailed measurements and ethical boundaries.</p>
+
+          <div class="timeline-steps">
+            <div class="step-item reveal">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h4>Empathetic Listening</h4>
+                <p>We carefully evaluate your complaints, expectations and daily life needs.</p>
+              </div>
+            </div>
+            <div class="step-item reveal reveal-delay-1">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h4>Detailed Analysis</h4>
+                <p>We examine your eye structure with topography, OCT, biometry and all necessary advanced measurements.</p>
+              </div>
+            </div>
+            <div class="step-item reveal reveal-delay-2">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h4>Personalised Planning</h4>
+                <p>We create a safe, scientifically grounded treatment plan tailored specifically to you.</p>
+              </div>
+            </div>
+            <div class="step-item reveal reveal-delay-3">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <h4>Meticulous Follow-up</h4>
+                <p>We closely monitor your recovery and long-term visual quality after any intervention.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FAQ
+  ===================================================== -->
+  <section class="faq section">
+    <div class="container">
+      <div class="faq-inner">
+        <div class="faq-header">
+          <div class="label" style="justify-content:center;">Frequently Asked</div>
+          <h2 class="section-title reveal">Your Questions</h2>
+        </div>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Is cataract surgery a difficult procedure?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">With the modern FAKO technique, cataract surgery is most often performed without sutures. Success is directly related to proper guidance, precise planning and an experienced surgical approach.</p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Is laser eye surgery suitable for everyone?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">No. Corneal structure, thickness, topography, dry eye level and certain systemic or ocular conditions may affect laser suitability. The decision must always be made following a detailed examination.</p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Can keratoconus progression be stopped?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Cross-linking, applied in suitable patients, is one of the most important options for slowing or halting keratoconus progression. Early diagnosis is critical in this process.</p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Can a multifocal lens be implanted in every patient?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Not always. Corneal structure, retinal health, intraocular pressure and visual expectations must all be evaluated before a premium lens decision can be made.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       INSTAGRAM
+  ===================================================== -->
+  <section class="instagram section" id="instagram">
+    <div class="container">
+      <div class="ig-box">
+
+        <div class="ig-header">
+          <div class="ig-title">
+            <div class="label">Social Media</div>
+            <h3>Eye Health With<br>Surprising Content</h3>
+          </div>
+          <a href="https://instagram.com/prof.dr.ibrahimtoprak" target="_blank" rel="noopener noreferrer"
+             style="display:inline-flex; align-items:center; gap:12px; background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045); color:#fff; padding:12px 22px; border-radius:var(--r-sm); font-size:14px; font-weight:700; text-decoration:none; box-shadow:0 8px 24px rgba(131,58,180,0.3); transition:all 0.3s; flex-shrink:0;"
+             onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 12px 32px rgba(131,58,180,0.4)'"
+             onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 8px 24px rgba(131,58,180,0.3)'">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+            @prof.dr.ibrahimtoprak
+          </a>
+        </div>
+
+        <div class="ig-feed reveal" style="border-radius:var(--r-lg); overflow:hidden; border:1px solid var(--border); background:var(--cream);">
+          <behold-widget feed-id="d2LgVjjHH75RbnEH4ls4" style="width:675px; max-width:100%; display:block;"></behold-widget>
+          <script>
+            (() => {
+              const d=document,s=d.createElement("script");s.type="module";
+              s.src="https://w.behold.so/widget.js";d.head.append(s);
+            })();
+          </script>
+        </div>
+
+        <div class="ig-cta-banner reveal">
+          <div class="ig-cta-text">
+            <div class="ig-cta-tag">Instagram</div>
+            <h4>Eye health doesn't have to<br>be this boring.</h4>
+            <p>Mini eye tests, surgical moments and a surprise in every video — simple, sincere and fun. Follow along.</p>
+            <div class="ig-cta-pill">Regular new content</div>
+          </div>
+          <a href="https://instagram.com/prof.dr.ibrahimtoprak" target="_blank" rel="noopener noreferrer" class="ig-cta-btn">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            Follow @prof.dr.ibrahimtoprak
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       CONTACT
+  ===================================================== -->
+  <section class="contact" id="iletisim">
+    <div class="container">
+
+      <div class="contact-header">
+        <div class="label" style="justify-content:center;">Contact</div>
+        <h2>Reach Out for Consultation<br>and Evaluation</h2>
+        <p>You may contact our team for examination and treatment planning.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <h3>Get in Touch</h3>
+          <div class="info-row">
+            <label>Address</label>
+            <p>Pamukkale University Faculty of Medicine Hospital<br>Department of Ophthalmology<br>Psychiatry Hospital Building, 1st Floor<br>Kınıklı Campus, Denizli</p>
+          </div>
+          <div style="margin-top:16px; border-radius:var(--r-md); overflow:hidden; border:1px solid rgba(255,255,255,0.1);">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.4!2d29.1042208!3d37.7418124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c73ec23b20504b%3A0xbc01a7f25494bfb8!2sPamukkale%20%C3%9Cniversitesi%20T%C4%B1p%20Fak%C3%BCltesi%20Hastanesi!5e0!3m2!1str!2str!4v1"
+              width="100%" height="220" style="border:0; display:block; filter:grayscale(15%);"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="info-row">
+            <label>Appointment</label>
+            <a href="tel:+904444747" class="info-phone" style="text-decoration:none;">444 47 47</a>
+            <p style="font-size:13px; color:rgba(255,255,255,0.55); margin-top:4px;">Dahili: 4610</p>
+          </div>
+          <div class="info-row">
+            <label>Working Hours</label>
+            <p>Monday – Friday<br>09:00 – 17:00</p>
+          </div>
+          <div class="info-row">
+            <label>E-mail</label>
+            <p><script>document.write('<a href="mailto:itoprak@pau.edu.tr" style="color:var(--gold-light);">itoprak@pau.edu.tr</a>')</script></p>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-1">
+          <h3>Appointment</h3>
+          <p class="form-sub">To make an appointment, please call the number below.</p>
+
+          <div style="background:var(--gold-pale); border:1px solid var(--border-gold); border-radius:var(--r-md); padding:32px; text-align:center; margin-top:8px;">
+            <div style="font-size:36px; margin-bottom:16px;">📞</div>
+            <p style="color:var(--navy); font-size:16px; font-weight:700; margin-bottom:16px;">PAÜ Hospital Appointment Line</p>
+            <div style="padding:16px 24px; background:white; border-radius:var(--r-sm); display:inline-block; border:1px solid var(--border-gold);">
+              <div style="font-family:var(--font-serif); font-size:32px; font-weight:700; color:var(--navy);"><a href="tel:+904444747" style="color:inherit;text-decoration:none;">444 47 47</a></div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:4px; font-weight:600;">Ext: 4610 · Mon–Fri 09:00–17:00</div>
+            </div>
+          </div>
+          <!-- FORM INACTIVE
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" required placeholder="Your Full Name">
+              </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" name="phone" required placeholder="Your Phone Number">
+              </div>
+              <div class="form-group">
+                <label>Subject</label>
+                <select name="topic" required>
+                  <option value="">Select</option>
+                  <option>Keratoconus</option>
+                  <option>Cataract &amp; Premium Lens</option>
+                  <option>Laser Refractive Surgery</option>
+                  <option>Phakic Lens</option>
+                  <option>Glokom</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>City</label>
+                <input type="text" name="city" placeholder="Your City">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Your Message</label>
+              <textarea name="message" placeholder="Please describe your concern or the topic you wish to consult about..."></textarea>
+            </div>
+            <div class="form-note">
+              This form is for informational purposes and will be forwarded to our team. Appointments are arranged within PAÜ Hospital procedures. A physician examination is mandatory for definitive diagnosis and treatment.
+            </div>
+            <button type="submit" class="btn btn-gold" style="width:100%; height:54px; font-size:13px;">
+              Send Request
+            </button>
+          </form>
+          END FORM INACTIVE -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FOOTER
+  ===================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <strong>Prof. Dr. İbrahim Toprak</strong>
+          <span>Cornea · Cataract · Refractive Surgery · Glaucoma</span>
+        </div>
+        <nav class="footer-nav">
+          <a href="#alanlar">Specialties</a>
+          <a href="#cerrahi">Surgeries</a>
+          <a href="#akademik">Academic Profile</a>
+          <a href="#surec">Consultation</a>
+          <a href="https://instagram.com/prof.dr.ibrahimtoprak" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="#iletisim">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-legal">
+        <strong style="color:rgba(255,255,255,0.35);">Disclaimer:</strong> The content on this website is for informational purposes only. No content replaces examination, diagnosis or personalised treatment planning. Expert medical evaluation is required for all health decisions. Content has been prepared in accordance with Ministry of Health guidelines.
+      </p>
+      <p style="font-size:12px; color:rgba(255,255,255,0.18); margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.05);">
+        © <span id="copy-year"></span> Prof. Dr. İbrahim Toprak. All rights reserved. Unauthorised copying, reproduction or distribution of any text, images or content on this site is prohibited.
+      </p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="btn-scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- =====================================================
+       JAVASCRIPT — Scroll animations + Header scroll
+  ===================================================== -->
+  <script>
+
+    // Copyright year
+    const yr = document.getElementById('copy-year');
+    if (yr) yr.textContent = new Date().getFullYear();
+
+    // Add js-ready so animations only apply when JS works
+    document.body.classList.add('js-ready');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    const header = document.getElementById('site-header');
+    const scrollBtn = document.getElementById('btn-scroll-top');
+
+    window.addEventListener('scroll', () => {
+      header.style.transform = window.scrollY > 60 ? 'translateY(-42px)' : 'translateY(0)';
+      if (scrollBtn) scrollBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+  </script>
+
+
+</body>
+</html>
