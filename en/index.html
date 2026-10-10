@@ -773,6 +773,35 @@
       .spec-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
+    /* Header: name always on one line */
+    .logo-mark { flex-shrink: 0; }
+    .logo-mark strong { white-space: nowrap; }
+    .nav-inner { gap: 20px; }
+    .main-nav { gap: 20px; }
+    .main-nav a { font-size: 15px; white-space: nowrap; }
+    .nav-bar .btn-gold svg { display: none; }
+    @media (max-width: 1280px) {
+      .main-nav { gap: 16px; }
+      .main-nav a { font-size: 14px; }
+      .logo-mark strong { font-size: 23px; }
+    }
+    @media (max-width: 1140px) {
+      .nav-bar .btn-gold span { display: none; }
+      .nav-bar .btn-gold svg { display: block; }
+      .nav-bar .btn-gold { width: 42px; padding: 0; justify-content: center; }
+    }
+    @media (max-width: 1040px) {
+      .main-nav { display: none; }
+    }
+    @media (max-width: 600px) {
+      .nav-bar .btn-gold { display: none !important; }
+      .phone-tooltip { display: none; }
+    }
+    .phone-tooltip { white-space: nowrap; }
+    .phone-btn-wrap:last-of-type .phone-tooltip { left: auto; right: 0; transform: translateY(4px); }
+    .phone-btn-wrap:hover .phone-tooltip { transform: translateY(0); }
+    .phone-btn-wrap:last-of-type .phone-tooltip::before { left: auto; right: 16px; transform: none; }
+
     @media (max-width: 768px) {
       .container { width: calc(100% - 32px); }
       .section { padding: 72px 0; }
@@ -798,6 +827,7 @@
       .hero-copy p[role="heading"] { white-space: normal !important; }
       .nav-inner { gap: 8px; }
       .logo-mark span { white-space: normal; letter-spacing: 0.5px; font-size: 10px; }
+      .logo-mark strong { font-size: 17px; letter-spacing: -0.4px; }
       .nav-bar .wa-btn, .phone-btn-wrap > a, .nav-bar .btn-gold { width: 38px !important; height: 38px !important; }
       .nav-inner > div[style*="gap:10px"] { gap: 6px !important; }
     }
@@ -913,7 +943,7 @@
           </div>
           <a href="#iletisim" class="btn btn-gold" style="height:42px;font-size:12px;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
-            <span>Book Appointment</span>
+            <span>Book</span>
           </a>
         </div>
       </div>
