@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prof. Dr. İbrahim Toprak | Eye Doctor Denizli &amp; Istanbul — Keratoconus, Cataract, Laser</title>
-  <meta name="description" content="Expert ophthalmologist Prof. Dr. İbrahim Toprak. Keratoconus, laser refractive surgery (PRK, LASIK), cataract, premium lens and glaucoma. Denizli PAÜ Faculty of Medicine &amp; Istanbul. FEBO, FICO, MRCSEd.">
+  <title>Prof. Dr. İbrahim Toprak | Eye Doctor Istanbul — Keratoconus, Cataract, Laser</title>
+  <meta name="description" content="Expert ophthalmologist Prof. Dr. İbrahim Toprak. Keratoconus, laser refractive surgery (PRK, LASIK), cataract, premium lens and glaucoma. Liv Hospital Ulus, Istanbul. FEBO, FICO, MRCSEd.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ibrahimtoprak.com/en/">
   <link rel="alternate" hreflang="tr" href="https://ibrahimtoprak.com/">
@@ -599,6 +599,20 @@
     .contact-form h3 { font-family: var(--font-sans); font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
     .contact-form .form-sub { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
 
+    .appt-box { background: var(--gold-pale); border: 1px solid var(--border-gold); border-radius: var(--r-md); padding: 32px; text-align: center; margin-top: 8px; }
+    .appt-box-title { color: var(--navy); font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+    .appt-number { display: inline-block; font-family: var(--font-serif); font-size: 34px; font-weight: 700; color: var(--navy); text-decoration: none; padding: 10px 24px; background: var(--white); border: 1px solid var(--border-gold); border-radius: var(--r-sm); }
+    .appt-box-sub { font-size: 12px; color: var(--text-muted); margin-top: 8px; font-weight: 600; }
+    .appt-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+    .appt-actions .btn { height: 48px; font-size: 13px; }
+    .btn-wa { background: #1FA855; color: #fff; border: 1px solid #1FA855; display: inline-flex; align-items: center; gap: 8px; }
+    .btn-wa:hover { background: #178A45; border-color: #178A45; color: #fff; }
+    .btn-wa svg { width: 18px; height: 18px; }
+    .appt-note { font-size: 12px; color: var(--text-muted); margin-top: 18px; line-height: 1.6; }
+    .wa-btn { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: var(--r-sm); background: rgba(31,168,85,0.1); border: 1px solid rgba(31,168,85,0.35); color: #1FA855; flex-shrink: 0; text-decoration: none; transition: all 0.3s; }
+    .wa-btn:hover { background: #1FA855; color: #fff; border-color: #1FA855; }
+    .wa-btn:focus-visible, .btn-wa:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
     .form-group { display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px; }
     .form-group label { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--slate); }
@@ -778,6 +792,15 @@
       .books-row { flex-direction: column; }
       .footer-grid { flex-direction: column; align-items: flex-start; }
     }
+    @media (max-width: 600px) {
+      .nav-bar .btn-gold span { display: none; }
+      .nav-bar .btn-gold { width: 42px; padding: 0; justify-content: center; }
+      .hero-copy p[role="heading"] { white-space: normal !important; }
+      .nav-inner { gap: 8px; }
+      .logo-mark span { white-space: normal; letter-spacing: 0.5px; font-size: 10px; }
+      .nav-bar .wa-btn, .phone-btn-wrap > a, .nav-bar .btn-gold { width: 38px !important; height: 38px !important; }
+      .nav-inner > div[style*="gap:10px"] { gap: 6px !important; }
+    }
   </style>
 
   <script type="application/ld+json">
@@ -787,29 +810,32 @@
     "name": "Prof. Dr. İbrahim Toprak",
     "url": "https://ibrahimtoprak.com",
     "image": "https://ibrahimtoprak.com/toprak.jpeg",
-    "description": "Ophthalmology faculty member at Pamukkale University. Specialist in keratoconus, cataract, laser refractive surgery and glaucoma.",
+    "description": "Ophthalmologist at Liv Hospital Ulus, Istanbul. Specialist in keratoconus, cataract, laser refractive surgery and glaucoma.",
     "jobTitle": "Professor, Ophthalmologist",
     "medicalSpecialty": "Ophthalmology",
     "worksFor": {
       "@type": "Hospital",
-      "name": "Pamukkale Üniversitesi Tıp Fakültesi Hastanesi",
+      "name": "Liv Hospital Ulus",
+      "url": "https://www.livhospital.com/liv-hospital-ulus",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Kınıklı Kampüsü",
-        "addressLocality": "Denizli",
+        "streetAddress": "Ahmet Adnan Saygun Cad., Canan Sk., Ulus",
+        "addressLocality": "Beşiktaş, İstanbul",
+        "postalCode": "34340",
         "addressCountry": "TR"
       }
     },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Pamukkale Üniversitesi Tıp Fakültesi Hastanesi, Göz Hastalıkları ABD, Kınıklı Kampüsü",
-      "addressLocality": "Denizli",
+      "streetAddress": "Liv Hospital Ulus, Ahmet Adnan Saygun Cad., Canan Sk., Ulus",
+      "addressLocality": "Beşiktaş, İstanbul",
+      "postalCode": "34340",
       "addressCountry": "TR"
     },
-    "telephone": "+904444747",
-    "email": "itoprak@pau.edu.tr",
+    "telephone": "+904444548",
     "sameAs": [
       "https://www.instagram.com/prof.dr.ibrahimtoprak",
+      "https://www.livhospital.com/en/prof-md-ibrahim-toprak",
       "https://www.researchgate.net/profile/Ibrahim-Toprak",
       "https://scholar.google.com/citations?user=lllerFgAAAAJ"
     ],
@@ -845,9 +871,9 @@
 
     <div class="topbar">
       <div class="container topbar-inner">
-        <span>Pamukkale University Faculty of Medicine — Department of Ophthalmology</span>
+        <span>Liv Hospital Ulus — Ophthalmology, Istanbul</span>
         <div>
-          <script>document.write('<a href="mailto:itoprak@pau.edu.tr">itoprak@pau.edu.tr</a>')</script>
+          <a href="https://wa.me/905306886880?text=Hello%2C%20I%20would%20like%20some%20information." target="_blank" rel="noopener">WhatsApp: +90 530 688 68 80</a>
         </div>
       </div>
     </div>
@@ -869,8 +895,9 @@
 
         <div style="display:flex;align-items:center;gap:10px;">
           <a href="/" title="Türkçeye Geç" style="font-size:11px;font-weight:700;color:var(--slate);border:1px solid var(--border);padding:5px 10px;border-radius:var(--r-sm);transition:all 0.2s;text-decoration:none;white-space:nowrap;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--slate)'">TR</a>
+          <a href="https://wa.me/905306886880?text=Hello%2C%20I%20would%20like%20some%20information." target="_blank" rel="noopener" class="wa-btn" title="Message on WhatsApp" aria-label="Message on WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 01-4.8-1.31l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 01-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 012.76 6.67c0 5.2-4.23 9.43-9.44 9.43zm8.03-17.46A11.28 11.28 0 0012.05.7C5.8.7.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.4l5.8-1.52a11.33 11.33 0 005.42 1.38h.01c6.25 0 11.35-5.1 11.35-11.36 0-3.03-1.18-5.89-3.32-8.03z"/></svg></a>
           <div style="position:relative;" class="phone-btn-wrap">
-            <a href="tel:+904444747"
+            <a href="tel:+904444548" aria-label="444 4 548"
                style="display:inline-flex;align-items:center;justify-content:center;
                       width:42px;height:42px;border-radius:var(--r-sm);
                       background:rgba(255,92,0,0.1);border:1px solid rgba(255,92,0,0.3);
@@ -880,8 +907,8 @@
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.5 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             </a>
             <div class="phone-tooltip">
-              <span>444 47 47</span>
-              <small>Dahili: 4610</small>
+              <span>444 4 548</span>
+              <small>Liv Hospital Call Center</small>
             </div>
           </div>
           <a href="#iletisim" class="btn btn-gold" style="height:42px;font-size:12px;">
@@ -1571,7 +1598,7 @@
       <div class="contact-header">
         <div class="label" style="justify-content:center;">Contact</div>
         <h2>Reach Out for Consultation<br>and Evaluation</h2>
-        <p>You may contact our team for examination and treatment planning.</p>
+        <p>Book your examination and treatment planning at Liv Hospital Ulus, Istanbul.</p>
       </div>
 
       <div class="contact-grid">
@@ -1580,41 +1607,40 @@
           <h3>Get in Touch</h3>
           <div class="info-row">
             <label>Address</label>
-            <p>Pamukkale University Faculty of Medicine Hospital<br>Department of Ophthalmology<br>Psychiatry Hospital Building, 1st Floor<br>Kınıklı Campus, Denizli</p>
+            <p>Liv Hospital Ulus<br>Department of Ophthalmology<br>Ahmet Adnan Saygun Cad., Canan Sk.<br>Ulus, Beşiktaş / Istanbul</p>
           </div>
           <div style="margin-top:16px; border-radius:var(--r-md); overflow:hidden; border:1px solid rgba(255,255,255,0.1);">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.4!2d29.1042208!3d37.7418124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c73ec23b20504b%3A0xbc01a7f25494bfb8!2sPamukkale%20%C3%9Cniversitesi%20T%C4%B1p%20Fak%C3%BCltesi%20Hastanesi!5e0!3m2!1str!2str!4v1"
+              src="https://www.google.com/maps?q=Liv%20Hospital%20Ulus%2C%20Be%C5%9Fikta%C5%9F%2C%20%C4%B0stanbul&output=embed"
               width="100%" height="220" style="border:0; display:block; filter:grayscale(15%);"
               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
           <div class="info-row">
             <label>Appointment</label>
-            <a href="tel:+904444747" class="info-phone" style="text-decoration:none;">444 47 47</a>
-            <p style="font-size:13px; color:rgba(255,255,255,0.55); margin-top:4px;">Dahili: 4610</p>
+            <a href="tel:+904444548" class="info-phone" style="text-decoration:none;">444 4 548</a>
+            <p style="font-size:13px; color:rgba(255,255,255,0.55); margin-top:4px;">Liv Hospital Call Center (from Turkey)</p>
           </div>
           <div class="info-row">
-            <label>Working Hours</label>
-            <p>Monday – Friday<br>09:00 – 17:00</p>
-          </div>
-          <div class="info-row">
-            <label>E-mail</label>
-            <p><script>document.write('<a href="mailto:itoprak@pau.edu.tr" style="color:var(--gold-light);">itoprak@pau.edu.tr</a>')</script></p>
+            <label>WhatsApp</label>
+            <a href="https://wa.me/905306886880?text=Hello%2C%20I%20would%20like%20some%20information." target="_blank" rel="noopener" class="info-phone" style="text-decoration:none;">+90 530 688 68 80</a>
+            <p style="font-size:13px; color:rgba(255,255,255,0.55); margin-top:4px;">For information, including from abroad</p>
           </div>
         </div>
 
         <div class="contact-form reveal reveal-delay-1">
           <h3>Appointment</h3>
-          <p class="form-sub">To make an appointment, please call the number below.</p>
+          <p class="form-sub">Appointments are arranged through Liv Hospital Ulus. Call the call center, book online, or message on WhatsApp if you are abroad.</p>
 
-          <div style="background:var(--gold-pale); border:1px solid var(--border-gold); border-radius:var(--r-md); padding:32px; text-align:center; margin-top:8px;">
-            <div style="font-size:36px; margin-bottom:16px;">📞</div>
-            <p style="color:var(--navy); font-size:16px; font-weight:700; margin-bottom:16px;">PAÜ Hospital Appointment Line</p>
-            <div style="padding:16px 24px; background:white; border-radius:var(--r-sm); display:inline-block; border:1px solid var(--border-gold);">
-              <div style="font-family:var(--font-serif); font-size:32px; font-weight:700; color:var(--navy);"><a href="tel:+904444747" style="color:inherit;text-decoration:none;">444 47 47</a></div>
-              <div style="font-size:12px; color:var(--text-muted); margin-top:4px; font-weight:600;">Ext: 4610 · Mon–Fri 09:00–17:00</div>
+          <div class="appt-box">
+            <p class="appt-box-title">Liv Hospital Appointment Line</p>
+            <a href="tel:+904444548" class="appt-number">444 4 548</a>
+            <div class="appt-box-sub">Liv Hospital Ulus · Ophthalmology</div>
+            <div class="appt-actions">
+              <a href="https://www.livhospital.com/en/prof-md-ibrahim-toprak" target="_blank" rel="noopener" class="btn btn-gold">Book online</a>
+              <a href="https://wa.me/905306886880?text=Hello%2C%20I%20would%20like%20some%20information." target="_blank" rel="noopener" class="btn btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 01-4.8-1.31l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 01-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 012.76 6.67c0 5.2-4.23 9.43-9.44 9.43zm8.03-17.46A11.28 11.28 0 0012.05.7C5.8.7.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.4l5.8-1.52a11.33 11.33 0 005.42 1.38h.01c6.25 0 11.35-5.1 11.35-11.36 0-3.03-1.18-5.89-3.32-8.03z"/></svg><span>Message on WhatsApp</span></a>
             </div>
+            <p class="appt-note">The WhatsApp line is for information and contact; appointments are booked through Liv Hospital.</p>
           </div>
           <!-- FORM INACTIVE
           <form action="#" method="POST">
@@ -1649,7 +1675,7 @@
               <textarea name="message" placeholder="Please describe your concern or the topic you wish to consult about..."></textarea>
             </div>
             <div class="form-note">
-              This form is for informational purposes and will be forwarded to our team. Appointments are arranged within PAÜ Hospital procedures. A physician examination is mandatory for definitive diagnosis and treatment.
+              This form is for informational purposes and will be forwarded to our team. Appointments are arranged within Liv Hospital Ulus procedures. A physician examination is mandatory for definitive diagnosis and treatment.
             </div>
             <button type="submit" class="btn btn-gold" style="width:100%; height:54px; font-size:13px;">
               Send Request
