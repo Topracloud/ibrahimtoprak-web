@@ -12,6 +12,8 @@ Diller: Türkçe, İngilizce. Randevu: Liv Hospital çağrı merkezi 444 4 548 v
 
 - [Keratoconus guide (EN)](https://www.ibrahimtoprak.com/en/keratoconus/): English version of the keratoconus guide
 - [Laser eye surgery guide (EN)](https://www.ibrahimtoprak.com/en/laser-eye-surgery/): English version of the laser eye surgery guide
+- [Çocuklarda keratokonus](https://www.ibrahimtoprak.com/keratokonus/cocuklarda-keratokonus/): ebeveynler için rehber; neden hızlı ilerler, tanı doğrulama, cross-linking zamanlaması, evde/okulda yapılacaklar, kardeş taraması
+- [Keratoconus in children (EN)](https://www.ibrahimtoprak.com/en/keratoconus/keratoconus-in-children/): guide for parents
 
 ## Seçilmiş yayınlar
 - Toprak I, Gunes CE. Increased epithelial backscatter: A novel finding in subclinical and clinical keratoconus. Clin Exp Ophthalmol 2021. https://doi.org/10.1111/ceo.13996

@@ -48,4 +48,20 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.ibrahimtoprak.com/lazer-goz-ameliyati/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ibrahimtoprak.com/en/laser-eye-surgery/"/>
   </url>
+  <url>
+    <loc>https://www.ibrahimtoprak.com/keratokonus/cocuklarda-keratokonus/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ibrahimtoprak.com/keratokonus/cocuklarda-keratokonus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ibrahimtoprak.com/en/keratoconus/keratoconus-in-children/"/>
+  </url>
+  <url>
+    <loc>https://www.ibrahimtoprak.com/en/keratoconus/keratoconus-in-children/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.ibrahimtoprak.com/keratokonus/cocuklarda-keratokonus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ibrahimtoprak.com/en/keratoconus/keratoconus-in-children/"/>
+  </url>
 </urlset>
