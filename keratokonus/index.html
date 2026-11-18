@@ -915,6 +915,49 @@
     .article-body .disclaimer { font-size: 13px; color: var(--text-muted); margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--border); }
     @media (max-width: 1000px) { .article-layout { grid-template-columns: 1fr; } .toc { position: static; } }
     @media (max-width: 768px) { .article-hero { padding: 110px 0 48px; } .article-cta { padding: 28px 24px; } .article-body table { display:block; overflow-x:auto; } }
+
+    /* === Guides strip + nav dropdown + contact align === */
+    .contact-grid { align-items: start; }
+    .guides { background: var(--white); border-bottom: 1px solid var(--border); }
+    .guides-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 28px 0; }
+    .guide-card { display: flex; align-items: center; gap: 18px; padding: 22px 24px; border: 1px solid var(--border); border-radius: var(--r-md); background: var(--cream, #FBF7F2); transition: transform .25s, box-shadow .25s, border-color .25s; }
+    .guide-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--border-gold); }
+    .guide-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--gold-pale); color: var(--gold); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .guide-icon svg { width: 24px; height: 24px; fill: currentColor; }
+    .guide-kicker { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+    .guide-title { font-family: var(--font-serif); font-size: 21px; color: var(--navy); line-height: 1.2; margin-bottom: 4px; }
+    .guide-desc { font-size: 13.5px; color: var(--text-muted); line-height: 1.5; }
+    .guide-arrow { margin-left: auto; color: var(--gold); font-size: 22px; flex-shrink: 0; }
+    @media (max-width: 768px) { .guides-inner { grid-template-columns: 1fr; gap: 12px; padding: 18px 0; } .guide-card { padding: 16px 18px; } .guide-title { font-size: 18px; } }
+    .main-nav { gap: 16px; }
+    .main-nav a { font-size: 14.5px; }
+    @media (max-width: 1300px) { .main-nav { gap: 13px; } .main-nav a { font-size: 13.5px; } .logo-mark strong { font-size: 22px; } }
+    @media (max-width: 1064px) { .main-nav { display: none; } }
+
+    /* === Mobile overflow fixes (pre-existing) === */
+    @media (max-width: 768px) {
+      .two-col-head { grid-template-columns: 1fr !important; gap: 12px !important; }
+      .statsbar-grid { grid-template-columns: 1fr 1fr; row-gap: 20px; }
+      .statsbar-item { border-right: none; padding: 8px; }
+      .statsbar-item strong { font-size: 40px; }
+      .pillar-item { padding: 20px 16px; gap: 12px; min-width: 0; }
+      .pillar-item:nth-child(odd) { border-right: 1px solid var(--border); }
+      .pillar-item:nth-child(even) { border-right: none; }
+      .pillar-text { min-width: 0; }
+      .pillar-text h4, .pillar-text p { overflow-wrap: anywhere; }
+      .contact-info, .contact-form { padding: 24px 20px; min-width: 0; max-width: 100%; }
+      .ig-cta-btn { white-space: normal; padding: 14px 20px; max-width: 100%; }
+    }
+    @media (max-width: 420px) { .nav-inner { padding: 0 3%; } .logo-mark strong { font-size: 16px; } .nav-bar .wa-btn, .phone-btn-wrap > a { width: 34px !important; height: 34px !important; } .nav-inner > div[style*="gap:10px"] { gap: 5px !important; } .nav-inner > div[style*="gap:10px"] > a[title] { padding: 4px 7px !important; } }
+    @media (max-width: 480px) { .statsbar-grid { grid-template-columns: 1fr 1fr; } .statsbar-item strong { font-size: 34px; } }
+    .nav-dd { position: relative; }
+    .nav-dd > a::after { display: none; }
+    .nav-dd-menu { position: absolute; top: 100%; left: -12px; padding-top: 12px; display: none; z-index: 50; }
+    .nav-dd:hover .nav-dd-menu, .nav-dd:focus-within .nav-dd-menu { display: block; }
+    .nav-dd-inner { background: var(--white); border: 1px solid var(--border); border-radius: var(--r-md); box-shadow: var(--shadow-md); padding: 8px; min-width: 240px; }
+    .nav-dd-inner a { display: block; padding: 10px 14px; border-radius: 8px; font-size: 14px; white-space: nowrap; }
+    .nav-dd-inner a:hover { background: var(--gold-pale); color: var(--navy); }
+    .nav-dd-inner a::after { display: none; }
   </style>
   <script type="application/ld+json">
 {
@@ -1175,6 +1218,12 @@
 
         <nav class="main-nav">
           <a href="/#alanlar">İlgi Alanları</a>
+          <div class="nav-dd"><a href="/#rehberler">Rehberler ▾</a>
+            <div class="nav-dd-menu"><div class="nav-dd-inner">
+              <a href="/keratokonus/">Keratokonus Rehberi</a>
+              <a href="/lazer-goz-ameliyati/">Lazer Göz Ameliyatı Rehberi</a>
+            </div></div>
+          </div>
           <a href="/#cerrahi">Ameliyatlar</a>
           <a href="/#akademik">Bilimsel Kimlik</a>
           <a href="/#surec">Muayene Süreci</a>
