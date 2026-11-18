@@ -1,0 +1,27 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/keratokonus",
+      "destination": "/keratokonus/",
+      "permanent": true
+    },
+    {
+      "source": "/lazer-goz-ameliyati",
+      "destination": "/lazer-goz-ameliyati/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.(jpeg|jpg|png|webp|ico)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

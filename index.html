@@ -3,15 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prof. Dr. İbrahim Toprak | Göz Doktoru İstanbul — Keratokonus, Katarakt, Lazer</title>
-  <meta name="description" content="Keratokonus, lazer refraktif cerrahi (PRK, LASIK), katarakt, akıllı lens ve glokom alanında uzman göz doktoru. Liv Hospital Ulus, İstanbul. FEBO, FICO, MRCSEd.">
+  <title>Prof. Dr. İbrahim Toprak | Göz Doktoru İstanbul — Keratokonus, Lazer, Katarakt</title>
+  <meta name="description" content="Prof. Dr. İbrahim Toprak, Liv Hospital Ulus (İstanbul) göz hastalıkları uzmanı. Keratokonus ve kornea hastalıkları, lazer refraktif cerrahi (PRK, No-Touch, LASIK), katarakt ve akıllı lens, fakik lens, glokom. FEBO, FICO, MRCSEd.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://ibrahimtoprak.com/">
-  <link rel="alternate" hreflang="tr" href="https://ibrahimtoprak.com/">
-  <link rel="alternate" hreflang="en" href="https://ibrahimtoprak.com/en/">
-  <link rel="alternate" hreflang="x-default" href="https://ibrahimtoprak.com/">
+  <link rel="canonical" href="https://www.ibrahimtoprak.com/">
+  <link rel="alternate" hreflang="tr" href="https://www.ibrahimtoprak.com/">
+  <link rel="alternate" hreflang="en" href="https://www.ibrahimtoprak.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.ibrahimtoprak.com/">
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="Prof. Dr. İbrahim Toprak">
+  <meta property="og:title" content="Prof. Dr. İbrahim Toprak | Göz Doktoru İstanbul — Keratokonus, Lazer, Katarakt">
+  <meta property="og:description" content="Liv Hospital Ulus, İstanbul. Keratokonus ve kornea hastalıkları, lazer refraktif cerrahi, katarakt ve akıllı lens, fakik göz içi lens, glokom.">
+  <meta property="og:url" content="https://www.ibrahimtoprak.com/">
+  <meta property="og:image" content="https://www.ibrahimtoprak.com/toprak.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prof. Dr. İbrahim Toprak | Göz Doktoru İstanbul">
+  <meta name="twitter:description" content="Keratokonus, lazer refraktif cerrahi, katarakt ve akıllı lens, fakik lens, glokom. Liv Hospital Ulus, İstanbul.">
+  <meta name="twitter:image" content="https://www.ibrahimtoprak.com/toprak.jpeg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -831,57 +843,297 @@
       .nav-bar .wa-btn, .phone-btn-wrap > a, .nav-bar .btn-gold { width: 38px !important; height: 38px !important; }
       .nav-inner > div[style*="gap:10px"] { gap: 6px !important; }
     }
+
+    /* === SEO additions (hero heading swap, guide links) === */
+    .hero-copy .hero-slogan {
+      font-family: var(--font-serif); font-size: clamp(44px, 5.5vw, 68px); line-height: 1.05;
+      letter-spacing: -1px; color: var(--white); margin-bottom: 24px; font-weight: 600; max-width: none;
+    }
+    .hero-copy .hero-slogan em { color: var(--gold-light); font-style: italic; }
+    .hero-copy .hero-intro { font-size: 15px; }
+    .spec-guide-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 13px; font-weight: 700; color: var(--gold); letter-spacing: 0.3px; transition: gap 0.2s; }
+    .spec-guide-link:hover { gap: 12px; }
+    .faq-body a { color: var(--gold); font-weight: 600; border-bottom: 1px solid var(--border-gold); }
+    .faq-body a:hover { color: var(--navy); }
   </style>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Physician",
-    "name": "Prof. Dr. İbrahim Toprak",
-    "url": "https://ibrahimtoprak.com",
-    "image": "https://ibrahimtoprak.com/toprak.jpeg",
-    "description": "Liv Hospital Ulus Göz Hastalıkları uzmanı. Keratokonus, katarakt, lazer refraktif cerrahi ve glokom alanlarında uzmanlaşmış oftalmolog.",
-    "jobTitle": "Profesör Doktor, Göz Hastalıkları Uzmanı",
-    "medicalSpecialty": "Ophthalmology",
-    "worksFor": {
-      "@type": "Hospital",
-      "name": "Liv Hospital Ulus",
-      "url": "https://www.livhospital.com/liv-hospital-ulus",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Ahmet Adnan Saygun Cad., Canan Sk., Ulus",
-        "addressLocality": "Beşiktaş, İstanbul",
-        "postalCode": "34340",
-        "addressCountry": "TR"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ibrahimtoprak.com/#website",
+      "url": "https://www.ibrahimtoprak.com/",
+      "name": "Prof. Dr. İbrahim Toprak",
+      "inLanguage": "tr",
+      "publisher": {
+        "@id": "https://www.ibrahimtoprak.com/#physician"
       }
     },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Liv Hospital Ulus, Ahmet Adnan Saygun Cad., Canan Sk., Ulus",
-      "addressLocality": "Beşiktaş, İstanbul",
-      "postalCode": "34340",
-      "addressCountry": "TR"
+    {
+      "@type": [
+        "Physician",
+        "Person"
+      ],
+      "@id": "https://www.ibrahimtoprak.com/#physician",
+      "name": "Prof. Dr. İbrahim Toprak",
+      "givenName": "İbrahim",
+      "familyName": "Toprak",
+      "honorificPrefix": "Prof. Dr.",
+      "url": "https://www.ibrahimtoprak.com/",
+      "image": "https://www.ibrahimtoprak.com/toprak.jpeg",
+      "description": "Prof. Dr. İbrahim Toprak, Liv Hospital Ulus (İstanbul) Göz Hastalıkları bölümünde görev yapan göz hastalıkları uzmanı ve kornea cerrahıdır. Keratokonus ve kornea hastalıkları, lazer refraktif cerrahi, katarakt ve akıllı lens, fakik göz içi lens ve glokom alanlarında çalışır.",
+      "jobTitle": "Göz Hastalıkları Uzmanı, Profesör",
+      "medicalSpecialty": "Ophthalmology",
+      "worksFor": {
+        "@type": "Hospital",
+        "name": "Liv Hospital Ulus",
+        "url": "https://www.livhospital.com/liv-hospital-ulus",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ahmet Adnan Saygun Cad., Canan Sk., Ulus",
+          "addressLocality": "Beşiktaş",
+          "addressRegion": "İstanbul",
+          "postalCode": "34340",
+          "addressCountry": "TR"
+        }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Liv Hospital Ulus, Ahmet Adnan Saygun Cad., Canan Sk., Ulus",
+        "addressLocality": "Beşiktaş",
+        "addressRegion": "İstanbul",
+        "postalCode": "34340",
+        "addressCountry": "TR"
+      },
+      "telephone": "+904444548",
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Dokuz Eylül Üniversitesi Tıp Fakültesi"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Pamukkale Üniversitesi Tıp Fakültesi"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "Vissum Ophthalmology Institute, Alicante (Fellowship, Prof. Jorge Alió)"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "FEBO",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "European Board of Ophthalmology"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "FICO",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "International Council of Ophthalmology"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "MRCSEd",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Royal College of Surgeons of Edinburgh"
+          }
+        }
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Türk Oftalmoloji Derneği"
+        }
+      ],
+      "knowsAbout": [
+        "Keratokonus",
+        "Kornea hastalıkları",
+        "Korneal çapraz bağlama (cross-linking)",
+        "Atina protokolü",
+        "Kornea içi halka (ICRS)",
+        "Lazer refraktif cerrahi",
+        "PRK",
+        "No-Touch lazer (TransPRK)",
+        "LASIK",
+        "Katarakt cerrahisi",
+        "Akıllı lens (multifokal göz içi lens)",
+        "Fakik göz içi lens (ICL)",
+        "Glokom",
+        "Korneal tomografi (Pentacam)",
+        "Epitel haritalaması"
+      ],
+      "knowsLanguage": [
+        "tr",
+        "en"
+      ],
+      "sameAs": [
+        "https://www.livhospital.com/prof-dr-ibrahim-toprak",
+        "https://www.livhospital.com/en/prof-md-ibrahim-toprak",
+        "https://scholar.google.com/citations?user=lllerFgAAAAJ",
+        "https://www.researchgate.net/profile/Ibrahim-Toprak",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=Toprak+I%5BAuthor%5D+AND+keratoconus",
+        "https://www.instagram.com/prof.dr.ibrahimtoprak"
+      ],
+      "subjectOf": [
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "Increased epithelial backscatter: A novel finding in subclinical and clinical keratoconus",
+          "author": "Toprak I, Gunes CE",
+          "datePublished": "2021",
+          "isPartOf": {
+            "@type": "Periodical",
+            "name": "Clinical & Experimental Ophthalmology"
+          },
+          "sameAs": "https://doi.org/10.1111/ceo.13996"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "A novel metric to monitor early progression in keratoconus: epithelial backscatter",
+          "author": "Toprak I, Gunes CE, Martin-Seker C, Parca O",
+          "datePublished": "2025",
+          "isPartOf": {
+            "@type": "Periodical",
+            "name": "International Ophthalmology"
+          },
+          "sameAs": "https://doi.org/10.1007/s10792-025-03627-x"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "Subclinical keratoconus detection with three-dimensional (3-D) morphogeometric and volumetric analysis",
+          "author": "Toprak I, Cavas F, Velázquez JS, Alió del Barrio JL, Alió JL",
+          "datePublished": "2020",
+          "isPartOf": {
+            "@type": "Periodical",
+            "name": "Acta Ophthalmologica"
+          },
+          "sameAs": "https://doi.org/10.1111/aos.14433"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "A combination of topographic and pachymetric parameters in keratoconus diagnosis",
+          "author": "Toprak I, Yaylalı V, Yıldırım C",
+          "datePublished": "2015",
+          "isPartOf": {
+            "@type": "Periodical",
+            "name": "Contact Lens and Anterior Eye"
+          },
+          "sameAs": "https://doi.org/10.1016/j.clae.2015.04.001"
+        }
+      ]
     },
-    "telephone": "+904444548",
-    "sameAs": [
-      "https://www.instagram.com/prof.dr.ibrahimtoprak",
-      "https://www.livhospital.com/prof-dr-ibrahim-toprak",
-      "https://www.researchgate.net/profile/Ibrahim-Toprak",
-      "https://scholar.google.com/citations?user=lllerFgAAAAJ"
-    ],
-    "knowsAbout": [
-      "Keratokonus",
-      "Çapraz Bağlama (Cross-Linking)",
-      "Lazer Refraktif Cerrahi",
-      "LASIK",
-      "PRK",
-      "No-Touch Laser",
-      "Katarakt Cerrahisi",
-      "Fakik Göz İçi Lens",
-      "Kornea Hastalıkları",
-      "Glokom"
-    ]
-  }
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.ibrahimtoprak.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Katarakt ameliyatı zor bir işlem midir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Modern FAKO yöntemi ile katarakt cerrahisi çoğunlukla dikişsiz uygulanan bir süreçtir. Başarı; doğru yönlendirme, hassas planlama ve deneyimli cerrahi yaklaşımla doğrudan ilişkilidir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Lazer göz ameliyatı herkese uygun mudur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Kornea yapısı, kalınlık, topografi, göz kuruluğu düzeyi ve bazı sistemik veya oküler durumlar lazer için uygunluğu etkileyebilir. Karar mutlaka detaylı muayene ile verilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Keratokonus ilerlemesi durdurulabilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uygun hastalarda uygulanan çapraz bağlama (cross-linking), keratokonus ilerlemesini yavaşlatmak veya durdurmak amacıyla kullanılan en önemli tedavi seçeneklerinden biridir. Erken tanı bu süreçte kritik öneme sahiptir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Akıllı lens her hastaya takılabilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Her zaman değil. Kornea yapısı, retina sağlığı, göz tansiyonu ve görsel beklenti seviyesi gibi parametreler değerlendirilmeden premium mercek kararı verilmemelidir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Keratokonus nedir, belirtileri nelerdir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keratokonus, gözün saydam ön tabakası olan korneanın incelip öne doğru sivrileşmesiyle görmeyi bozan bir hastalıktır. Genellikle ergenlik döneminde başlar. Sık değişen gözlük numarası, artan astigmat, ışık etrafında hale ve gözlükle tam düzelmeyen bulanıklık erken belirtiler olabilir. Keratokonus rehberi"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Keratokonus erken tanı için hangi tetkikler yapılır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Erken tanıda korneanın ön ve arka yüzeyini, kalınlık haritasını ve epitel tabakasını ölçen korneal tomografi (Pentacam) ve epitel haritalaması kullanılır. Gözlük muayenesi normal görünürken bu ölçümler hastalığı yıllar önce gösterebilir. Tanı yöntemleri"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cross-linking (çapraz bağlama) nasıl yapılır, kimlere uygulanır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cross-linking, korneaya riboflavin damlatılıp UV-A ışığı uygulanarak kornea dokusunun güçlendirilmesi işlemidir. Amaç keratokonusun ilerlemesini durdurmaktır; ilerleme gösteren veya ilerleme riski yüksek hastalarda uygulanır. Kornea kalınlığı ve hastalık evresi protokol seçimini belirler. Cross-linking ayrıntıları"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Keratokonus hastası lazer göz ameliyatı olabilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standart lazer (LASIK, PRK) keratokonusta uygulanmaz; korneayı daha da zayıflatabilir. Seçilmiş olgularda cross-linking ile birlikte topografi-güdümlü yüzey lazeri (Atina/Cretan protokolü) görme kalitesini artırmak amacıyla değerlendirilebilir. Karar ayrıntılı tomografi ile verilir. Keratokonus ve lazer"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Göz çizdirme (lazer göz ameliyatı) için kimler uygun değildir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "İnce veya düzensiz kornea, keratokonus ya da şüphesi, son bir yılda değişen gözlük numarası, 18 yaş altı, gebelik, kontrolsüz kuru göz, bazı romatizmal hastalıklar ve çok yüksek numaralar lazer için engel oluşturabilir. Bu kişilerde fakik göz içi lens gibi alternatifler değerlendirilir. Uygunluk kriterleri"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "No-Touch lazer, PRK, LASIK ve SMILE arasındaki fark nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hepsi gözlük numarasını kornea şeklini değiştirerek düzeltir. PRK ve No-Touch (TransPRK) kornea yüzeyinde uygulanır; No-Touch'ta yüzey de lazerle kaldırılır. LASIK'te ince bir kapakçık (flap) oluşturulur, iyileşme daha hızlıdır. SMILE'da küçük bir kesiden doku çıkarılır. Yöntem seçimi kornea kalınlığı, numara ve yaşam tarzına göre yapılır. Yöntemlerin karşılaştırması"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Lazer yerine fakik göz içi lens (ICL) ne zaman tercih edilir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kornea lazer için ince ya da yapısal olarak uygun değilse, numara çok yüksekse veya kuru göz belirginse, doğal merceğe dokunmadan göz içine yerleştirilen fakik lens bir alternatif olabilir. Göz içi mesafelerin ölçümüyle uygunluk belirlenir. Fakik lens alternatifi"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Lazer göz ameliyatı öncesi hangi incelemeler yapılır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Korneal tomografi (Pentacam), kornea kalınlığı ve epitel haritası, göz kuruluğu testleri, pupil çapı, göz dibi muayenesi ve gözlük numarasının kararlılığı değerlendirilir. Bu incelemeler lazer sonrası ektazi (kornea zayıflaması) riskini öngörmek için yapılır. Ameliyat öncesi değerlendirme"
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCE0TDDXWG"></script>
@@ -959,20 +1211,18 @@
     <div class="container hero-grid">
 
       <div class="hero-copy">
-        <p role="heading" aria-level="1" style="font-family:var(--font-serif); font-size:clamp(28px,4.2vw,56px); font-weight:600; color:var(--white); letter-spacing:-0.5px; margin-bottom:10px; line-height:1.05; white-space:nowrap;">Prof. Dr. İbrahim Toprak</p>
+        <h1 class="hero-name" style="font-family:var(--font-serif); font-size:clamp(28px,4.2vw,56px); font-weight:600; color:var(--white); letter-spacing:-0.5px; margin-bottom:10px; line-height:1.05; white-space:nowrap;">Prof. Dr. İbrahim Toprak</h1>
         <div class="hero-eyebrow">
           <span></span>
           Kornea · Katarakt · Refraktif Cerrahi · Glokom
         </div>
-        <h1>
+        <p class="hero-slogan">
           Göz sağlığında<br>
           <em>bilimsel derinlik</em>,<br>
           güven ve tecrübe
-        </h1>
-        <p>
-İleri tanı teknolojileri, uluslararası akademik birikimi ve
-          kişiye özgü cerrahi planlamayı hasta güvenliğini merkeze alan bir
-          anlayışla bir araya getirir.
+        </p>
+        <p class="hero-intro">
+          Prof. Dr. İbrahim Toprak, Liv Hospital Ulus (İstanbul) Göz Hastalıkları bölümünde görev yapan bir göz hastalıkları uzmanı ve kornea cerrahıdır. Keratokonus ve kornea hastalıkları, lazer refraktif cerrahi, katarakt ve akıllı lens, fakik göz içi lens ve glokom alanlarında çalışır; keratokonus üzerine uluslararası hakemli dergilerde yayımlanmış araştırmaları bulunmaktadır.
         </p>
         <div class="hero-actions">
           <a href="#iletisim" class="btn btn-gold">Randevu Alın</a>
@@ -982,7 +1232,7 @@
       </div>
 
       <div class="hero-visual">
-        <img class="hero-photo" src="toprak.jpeg" alt="Prof. Dr. İbrahim Toprak">
+        <img class="hero-photo" src="toprak.jpeg" alt="Prof. Dr. İbrahim Toprak, göz hastalıkları uzmanı, Liv Hospital Ulus İstanbul" fetchpriority="high">
         <div class="hero-visual-overlay"></div>
         <div class="hero-badge-card">
           <strong>Kişiye Özel Yaklaşım</strong>
@@ -1049,7 +1299,7 @@
       </div>
 
       <div class="certs-logo-row reveal">
-        <img src="sertifikalar.webp" alt="Uluslararası Yeterlilik Belgeleri">
+        <img src="sertifikalar.webp" alt="FEBO, FICO ve MRCSEd yeterlilik belgeleri — Prof. Dr. İbrahim Toprak">
       </div>
 
       <div class="certs-grid">
@@ -1106,7 +1356,7 @@
 
         <div class="spec-card reveal">
           <div class="spec-img">
-            <img src="keratokonus.jpeg" alt="Keratokonus">
+            <img src="keratokonus.jpeg" alt="Keratokonus — korneanın sivrileşmesi, korneal topografi görüntüsü">
             <div class="spec-img-overlay"></div>
           </div>
           <div class="spec-body">
@@ -1123,6 +1373,7 @@
             <div class="spec-pub-num">20+</div>
             <div class="spec-pub-text"><strong>Uluslararası Yayın</strong><span>Keratokonus tanı ve tedavisi alanında hakemli dergilerde özgün araştırmalar.</span></div>
           </div>
+          <a href="/keratokonus/" class="spec-guide-link">Keratokonus rehberi: belirtiler, erken tanı, cross-linking →</a>
           
           
           </div>
@@ -1130,7 +1381,7 @@
 
         <div class="spec-card reveal reveal-delay-1">
           <div class="spec-img">
-            <img src="laser1.webp" alt="Lazer Cerrahi">
+            <img src="laser1.webp" alt="Lazer refraktif cerrahi (PRK, No-Touch, LASIK) uygulaması">
             <div class="spec-img-overlay"></div>
           </div>
           <div class="spec-body">
@@ -1147,6 +1398,7 @@
             <div class="spec-pub-num" style="font-size:22px;">📄</div>
             <div class="spec-pub-text"><strong>Preop Değerlendirme Araştırmaları</strong><span>Lazer öncesi hasta seçimi ve risk analizi konularında hakemli yayınlar.</span></div>
           </div>
+          <a href="/lazer-goz-ameliyati/" class="spec-guide-link">Lazer göz ameliyatı rehberi: yöntemler ve uygunluk →</a>
           
           
           </div>
@@ -1154,7 +1406,7 @@
 
         <div class="spec-card reveal reveal-delay-2">
           <div class="spec-img">
-            <img src="akillilens.jpeg" alt="Akıllı Lens">
+            <img src="akillilens.jpeg" alt="Katarakt ameliyatı ve akıllı (çok odaklı) göz içi lens">
             <div class="spec-img-overlay"></div>
           </div>
           <div class="spec-body">
@@ -1174,7 +1426,7 @@
 
         <div class="spec-card reveal">
           <div class="spec-img">
-            <img src="topografi.webp" alt="Kornea Topografi">
+            <img src="topografi.webp" alt="Pentacam korneal topografi ve tomografi haritası">
             <div class="spec-img-overlay"></div>
           </div>
           <div class="spec-body">
@@ -1194,7 +1446,7 @@
 
         <div class="spec-card reveal reveal-delay-1">
           <div class="spec-img">
-            <img src="fakik2.webp" alt="Fakik Lens" style="object-position:center 30%;">
+            <img src="fakik2.webp" alt="Fakik göz içi lens (ICL) — yüksek miyopide lazer alternatifi" style="object-position:center 30%;">
             <div class="spec-img-overlay"></div>
           </div>
           <div class="spec-body">
@@ -1214,7 +1466,7 @@
 
         <div class="spec-card reveal reveal-delay-2">
           <div class="spec-img">
-            <img src="glokom1.jpeg" alt="Glokom Açısı">
+            <img src="glokom1.jpeg" alt="Glokom (göz tansiyonu) — ön kamara açısı değerlendirmesi">
             <div class="spec-img-overlay"></div>
           </div>
           <div class="spec-body">
@@ -1343,7 +1595,7 @@
         <div class="academic-sticky">
           <h2 class="section-title reveal" style="margin-bottom:28px;">Uluslararası Tecrübe,<br><em style="font-style:italic; color:var(--gold);">İnsan Odaklı Dokunuş</em></h2>
           <div class="academic-photo-frame reveal">
-            <img src="ameliyat1.webp" alt="Prof. Dr. İbrahim Toprak — Ameliyathane">
+            <img src="ameliyat1.webp" alt="Prof. Dr. İbrahim Toprak ameliyathanede göz cerrahisi sırasında">
             <div class="academic-photo-caption">
               <strong>Prof. Dr. İbrahim Toprak</strong>
               <span>Klinik Otorite · Cerrahi Hassasiyet</span>
@@ -1359,7 +1611,7 @@
             </div>
             <p>Ulusal ve uluslararası kongrelerde davetli konuşmacı olarak bilimsel tecrübe aktarımı.</p>
             <div style="margin-top:16px;">
-              <img src="present1.jpeg" alt="Kongre Sunumu" style="border-radius:var(--r-sm); width:100%; height:180px; object-fit:cover; object-position:center top;">
+              <img src="present1.jpeg" alt="Prof. Dr. İbrahim Toprak uluslararası oftalmoloji kongresinde sunum yaparken" style="border-radius:var(--r-sm); width:100%; height:180px; object-fit:cover; object-position:center top;">
             </div>
           </div>
 
@@ -1372,7 +1624,7 @@
             </div>
             <p>Uluslararası saygın oftalmoloji dergilerinde hakemlik ve literatüre giren kapsamlı kitap bölümleri.</p>
             <div class="books-row">
-              <div class="book-item"><img src="kitap2.jpeg" alt="Albert's Principles"></div>
+              <div class="book-item"><img src="kitap2.jpeg" alt="Albert and Jakobiec's Principles and Practice of Ophthalmology — kitap bölümü yazarlığı"></div>
               <div class="book-item"><img src="kitap1.jpeg" alt="History of Refractive Surgery"></div>
               <div class="book-item"><img src="kitap3.jpeg" alt="Lazer Refraktif Cerrahi"></div>
             </div>
@@ -1480,7 +1732,7 @@
       <div class="process-grid">
 
         <div class="process-photo reveal">
-          <img src="biomicroscopy.jpeg" alt="Hasta Muayenesi">
+          <img src="biomicroscopy.jpeg" alt="Biyomikroskop ile göz muayenesi — Prof. Dr. İbrahim Toprak">
           <div class="process-photo-badge">Klinik Yaklaşım</div>
         </div>
 
@@ -1527,7 +1779,7 @@
   <!-- =====================================================
        FAQ
   ===================================================== -->
-  <section class="faq section">
+  <section class="faq section" id="sss">
     <div class="container">
       <div class="faq-inner">
         <div class="faq-header">
@@ -1556,7 +1808,7 @@
             <span>Keratokonus ilerlemesi durdurulabilir mi?</span>
             <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
           </summary>
-          <p class="faq-body">Uygun hastalarda uygulanan çapraz bağlama (cross-linking), keratokonus ilerlemesini yavaşlatmak veya durdurmak amacıyla kullanılan en önemli tedave seçeneklerinden biridir. Erken tanı bu süreçte kritik öneme sahiptir.</p>
+          <p class="faq-body">Uygun hastalarda uygulanan çapraz bağlama (cross-linking), keratokonus ilerlemesini yavaşlatmak veya durdurmak amacıyla kullanılan en önemli tedavi seçeneklerinden biridir. Erken tanı bu süreçte kritik öneme sahiptir.</p>
         </details>
 
         <details class="faq-item reveal">
@@ -1565,6 +1817,70 @@
             <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
           </summary>
           <p class="faq-body">Her zaman değil. Kornea yapısı, retina sağlığı, göz tansiyonu ve görsel beklenti seviyesi gibi çok sayıda parametre değerlendirilmeden premium mercek kararı verilmemelidir.</p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Keratokonus nedir, belirtileri nelerdir?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Keratokonus, gözün saydam ön tabakası olan korneanın incelip öne doğru sivrileşmesiyle görmeyi bozan bir hastalıktır. Genellikle ergenlik döneminde başlar. Sık değişen gözlük numarası, artan astigmat, ışık etrafında hale ve gözlükle tam düzelmeyen bulanıklık erken belirtiler olabilir. <a href="/keratokonus/">Keratokonus rehberi</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Keratokonus erken tanı için hangi tetkikler yapılır?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Erken tanıda korneanın ön ve arka yüzeyini, kalınlık haritasını ve epitel tabakasını ölçen korneal tomografi (Pentacam) ve epitel haritalaması kullanılır. Gözlük muayenesi normal görünürken bu ölçümler hastalığı yıllar önce gösterebilir. <a href="/keratokonus/#tani">Tanı yöntemleri</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Cross-linking (çapraz bağlama) nasıl yapılır, kimlere uygulanır?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Cross-linking, korneaya riboflavin damlatılıp UV-A ışığı uygulanarak kornea dokusunun güçlendirilmesi işlemidir. Amaç keratokonusun ilerlemesini durdurmaktır; ilerleme gösteren veya ilerleme riski yüksek hastalarda uygulanır. Kornea kalınlığı ve hastalık evresi protokol seçimini belirler. <a href="/keratokonus/#cross-linking">Cross-linking ayrıntıları</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Keratokonus hastası lazer göz ameliyatı olabilir mi?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Standart lazer (LASIK, PRK) keratokonusta uygulanmaz; korneayı daha da zayıflatabilir. Seçilmiş olgularda cross-linking ile birlikte topografi-güdümlü yüzey lazeri (Atina/Cretan protokolü) görme kalitesini artırmak amacıyla değerlendirilebilir. Karar ayrıntılı tomografi ile verilir. <a href="/keratokonus/#lazer">Keratokonus ve lazer</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Göz çizdirme (lazer göz ameliyatı) için kimler uygun değildir?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">İnce veya düzensiz kornea, keratokonus ya da şüphesi, son bir yılda değişen gözlük numarası, 18 yaş altı, gebelik, kontrolsüz kuru göz, bazı romatizmal hastalıklar ve çok yüksek numaralar lazer için engel oluşturabilir. Bu kişilerde fakik göz içi lens gibi alternatifler değerlendirilir. <a href="/lazer-goz-ameliyati/#kimler-uygun-degil">Uygunluk kriterleri</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>No-Touch lazer, PRK, LASIK ve SMILE arasındaki fark nedir?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Hepsi gözlük numarasını kornea şeklini değiştirerek düzeltir. PRK ve No-Touch (TransPRK) kornea yüzeyinde uygulanır; No-Touch'ta yüzey de lazerle kaldırılır. LASIK'te ince bir kapakçık (flap) oluşturulur, iyileşme daha hızlıdır. SMILE'da küçük bir kesiden doku çıkarılır. Yöntem seçimi kornea kalınlığı, numara ve yaşam tarzına göre yapılır. <a href="/lazer-goz-ameliyati/#yontemler">Yöntemlerin karşılaştırması</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Lazer yerine fakik göz içi lens (ICL) ne zaman tercih edilir?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Kornea lazer için ince ya da yapısal olarak uygun değilse, numara çok yüksekse veya kuru göz belirginse, doğal merceğe dokunmadan göz içine yerleştirilen fakik lens bir alternatif olabilir. Göz içi mesafelerin ölçümüyle uygunluk belirlenir. <a href="/lazer-goz-ameliyati/#fakik-lens">Fakik lens alternatifi</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Lazer göz ameliyatı öncesi hangi incelemeler yapılır?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Korneal tomografi (Pentacam), kornea kalınlığı ve epitel haritası, göz kuruluğu testleri, pupil çapı, göz dibi muayenesi ve gözlük numarasının kararlılığı değerlendirilir. Bu incelemeler lazer sonrası ektazi (kornea zayıflaması) riskini öngörmek için yapılır. <a href="/lazer-goz-ameliyati/#on-degerlendirme">Ameliyat öncesi değerlendirme</a></p>
         </details>
 
       </div>
@@ -1735,6 +2051,8 @@
           <a href="#cerrahi">Ameliyatlar</a>
           <a href="#akademik">Bilimsel Kimlik</a>
           <a href="#surec">Muayene Süreci</a>
+          <a href="/keratokonus/">Keratokonus Rehberi</a>
+          <a href="/lazer-goz-ameliyati/">Lazer Göz Ameliyatı</a>
           <a href="https://instagram.com/prof.dr.ibrahimtoprak" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="#iletisim">İletişim</a>
         </nav>
