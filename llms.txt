@@ -10,6 +10,9 @@ Diller: Türkçe, İngilizce. Randevu: Liv Hospital çağrı merkezi 444 4 548 v
 - [Keratokonus rehberi](https://www.ibrahimtoprak.com/keratokonus/): keratokonus nedir, belirtileri, göz ovma ve aile öyküsü, Pentacam ve epitel haritalaması ile erken tanı, cross-linking, Atina/Cretan protokolü, kornea içi halka, keratokonus ve lazer, çocuklarda keratokonus
 - [Lazer göz ameliyatı rehberi](https://www.ibrahimtoprak.com/lazer-goz-ameliyati/): PRK, No-Touch, LASIK, SMILE farkları; kimler uygun değildir; Pentacam ile ameliyat öncesi değerlendirme; ektazi riski; keratokonus şüphesi; hipermetropi; fakik göz içi lens (ICL) alternatifi
 
+- [Keratoconus guide (EN)](https://www.ibrahimtoprak.com/en/keratoconus/): English version of the keratoconus guide
+- [Laser eye surgery guide (EN)](https://www.ibrahimtoprak.com/en/laser-eye-surgery/): English version of the laser eye surgery guide
+
 ## Seçilmiş yayınlar
 - Toprak I, Gunes CE. Increased epithelial backscatter: A novel finding in subclinical and clinical keratoconus. Clin Exp Ophthalmol 2021. https://doi.org/10.1111/ceo.13996
 - Toprak I, Gunes CE, Martin-Seker C, Parca O. A novel metric to monitor early progression in keratoconus: epithelial backscatter. Int Ophthalmol 2025. https://doi.org/10.1007/s10792-025-03627-x
