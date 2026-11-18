@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prof. Dr. İbrahim Toprak | Eye Doctor Istanbul — Keratoconus, Cataract, Laser</title>
-  <meta name="description" content="Expert ophthalmologist Prof. Dr. İbrahim Toprak. Keratoconus, laser refractive surgery (PRK, LASIK), cataract, premium lens and glaucoma. Liv Hospital Ulus, Istanbul. FEBO, FICO, MRCSEd.">
+  <title>Prof. Dr. İbrahim Toprak | Eye Doctor Istanbul — Keratoconus, Laser, Cataract</title>
+  <meta name="description" content="Prof. Dr. İbrahim Toprak — corneal surgeon and keratoconus researcher. Early keratoconus diagnosis and cross-linking, laser refractive surgery (PRK, No-Touch, LASIK), cataract and premium lenses, phakic IOL, glaucoma. FEBO, FICO, MRCSEd. Istanbul.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.ibrahimtoprak.com/en/">
   <link rel="alternate" hreflang="tr" href="https://www.ibrahimtoprak.com/">
@@ -855,6 +855,49 @@
     .spec-guide-link:hover { gap: 12px; }
     .faq-body a { color: var(--gold); font-weight: 600; border-bottom: 1px solid var(--border-gold); }
     .faq-body a:hover { color: var(--navy); }
+
+    /* === Guides strip + nav dropdown + contact align === */
+    .contact-grid { align-items: start; }
+    .guides { background: var(--white); border-bottom: 1px solid var(--border); }
+    .guides-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 28px 0; }
+    .guide-card { display: flex; align-items: center; gap: 18px; padding: 22px 24px; border: 1px solid var(--border); border-radius: var(--r-md); background: var(--cream, #FBF7F2); transition: transform .25s, box-shadow .25s, border-color .25s; }
+    .guide-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--border-gold); }
+    .guide-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--gold-pale); color: var(--gold); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .guide-icon svg { width: 24px; height: 24px; fill: currentColor; }
+    .guide-kicker { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+    .guide-title { font-family: var(--font-serif); font-size: 21px; color: var(--navy); line-height: 1.2; margin-bottom: 4px; }
+    .guide-desc { font-size: 13.5px; color: var(--text-muted); line-height: 1.5; }
+    .guide-arrow { margin-left: auto; color: var(--gold); font-size: 22px; flex-shrink: 0; }
+    @media (max-width: 768px) { .guides-inner { grid-template-columns: 1fr; gap: 12px; padding: 18px 0; } .guide-card { padding: 16px 18px; } .guide-title { font-size: 18px; } }
+    .main-nav { gap: 16px; }
+    .main-nav a { font-size: 14.5px; }
+    @media (max-width: 1300px) { .main-nav { gap: 13px; } .main-nav a { font-size: 13.5px; } .logo-mark strong { font-size: 22px; } }
+    @media (max-width: 1064px) { .main-nav { display: none; } }
+
+    /* === Mobile overflow fixes (pre-existing) === */
+    @media (max-width: 768px) {
+      .two-col-head { grid-template-columns: 1fr !important; gap: 12px !important; }
+      .statsbar-grid { grid-template-columns: 1fr 1fr; row-gap: 20px; }
+      .statsbar-item { border-right: none; padding: 8px; }
+      .statsbar-item strong { font-size: 40px; }
+      .pillar-item { padding: 20px 16px; gap: 12px; min-width: 0; }
+      .pillar-item:nth-child(odd) { border-right: 1px solid var(--border); }
+      .pillar-item:nth-child(even) { border-right: none; }
+      .pillar-text { min-width: 0; }
+      .pillar-text h4, .pillar-text p { overflow-wrap: anywhere; }
+      .contact-info, .contact-form { padding: 24px 20px; min-width: 0; max-width: 100%; }
+      .ig-cta-btn { white-space: normal; padding: 14px 20px; max-width: 100%; }
+    }
+    @media (max-width: 420px) { .nav-inner { padding: 0 3%; } .logo-mark strong { font-size: 16px; } .nav-bar .wa-btn, .phone-btn-wrap > a { width: 34px !important; height: 34px !important; } .nav-inner > div[style*="gap:10px"] { gap: 5px !important; } .nav-inner > div[style*="gap:10px"] > a[title] { padding: 4px 7px !important; } }
+    @media (max-width: 480px) { .statsbar-grid { grid-template-columns: 1fr 1fr; } .statsbar-item strong { font-size: 34px; } }
+    .nav-dd { position: relative; }
+    .nav-dd > a::after { display: none; }
+    .nav-dd-menu { position: absolute; top: 100%; left: -12px; padding-top: 12px; display: none; z-index: 50; }
+    .nav-dd:hover .nav-dd-menu, .nav-dd:focus-within .nav-dd-menu { display: block; }
+    .nav-dd-inner { background: var(--white); border: 1px solid var(--border); border-radius: var(--r-md); box-shadow: var(--shadow-md); padding: 8px; min-width: 240px; }
+    .nav-dd-inner a { display: block; padding: 10px 14px; border-radius: 8px; font-size: 14px; white-space: nowrap; }
+    .nav-dd-inner a:hover { background: var(--gold-pale); color: var(--navy); }
+    .nav-dd-inner a::after { display: none; }
   </style>
 
   <script type="application/ld+json">
@@ -917,6 +960,111 @@
     gtag('js', new Date());
     gtag('config', 'G-SCE0TDDXWG');
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.ibrahimtoprak.com/en/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is cataract surgery a difficult procedure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With the modern PHACO technique, cataract surgery is most often performed without sutures. Success is directly related to proper guidance, precise planning and an experienced surgical approach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is laser eye surgery suitable for everyone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Corneal structure, thickness, topography, dry eye level and certain systemic or ocular conditions may affect laser suitability. The decision must always be made following a detailed examination."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can keratoconus progression be stopped?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cross-linking, applied in suitable patients, is one of the most important options for slowing or halting keratoconus progression. Early diagnosis is critical in this process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a multifocal lens be implanted in every patient?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not always. Corneal structure, retinal health, intraocular pressure and visual expectations must all be evaluated before a premium lens decision can be made."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is keratoconus and what are its symptoms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keratoconus is a disease in which the cornea, the clear front window of the eye, thins and bulges forward, distorting vision. It usually begins in the teenage years. A frequently changing prescription, increasing astigmatism, halos around lights and blur that glasses cannot fully correct are early signs. Keratoconus guide"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which tests are used for early diagnosis of keratoconus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Corneal tomography (Pentacam) measures the front and back surfaces, the thickness map and the epithelial layer; epithelial mapping adds further detail. These measurements can reveal the disease years before a routine glasses exam shows anything abnormal. Diagnostic methods"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is cross-linking performed and who is it for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cross-linking strengthens the cornea by applying riboflavin drops followed by UV-A light. Its goal is to stop keratoconus from progressing; it is performed in patients with documented progression or a high risk of it. Corneal thickness and disease stage determine the protocol. Cross-linking details"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a keratoconus patient have laser eye surgery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard laser (LASIK, PRK) is not performed in keratoconus; it can further weaken the cornea. In selected cases, topography-guided surface laser combined with cross-linking (Athens / Cretan protocol) may be considered to improve visual quality. The decision rests on detailed tomography. Keratoconus and laser"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is not a candidate for laser eye surgery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A thin or irregular cornea, keratoconus or suspected keratoconus, a prescription that changed within the past year, age under 18, pregnancy, uncontrolled dry eye, certain rheumatic diseases and very high prescriptions can rule out laser. For these patients, alternatives such as a phakic intraocular lens are considered. Candidacy criteria"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between No-Touch laser, PRK, LASIK and SMILE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All of them correct the prescription by reshaping the cornea. PRK and No-Touch (TransPRK) work on the surface; in No-Touch the surface is also removed by laser. LASIK creates a thin flap and recovers faster. SMILE removes tissue through a small incision. The choice depends on corneal thickness, prescription and lifestyle. Method comparison"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is a phakic intraocular lens (ICL) preferred over laser?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the cornea is too thin or structurally unsuitable for laser, the prescription is very high or dry eye is significant, a phakic lens placed inside the eye without touching the natural lens can be an alternative. Candidacy is determined by measuring the internal dimensions of the eye. Phakic IOL alternative"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which examinations are done before laser eye surgery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Corneal tomography (Pentacam), corneal thickness and epithelial map, dry eye tests, pupil size, dilated fundus examination and confirmation that the prescription is stable. These are performed to predict the risk of ectasia (corneal weakening) after laser. Preoperative evaluation"
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -943,6 +1091,12 @@
 
         <nav class="main-nav">
           <a href="#alanlar">Specialties</a>
+          <div class="nav-dd"><a href="#guides">Guides ▾</a>
+            <div class="nav-dd-menu"><div class="nav-dd-inner">
+              <a href="/en/keratoconus/">Keratoconus Guide</a>
+              <a href="/en/laser-eye-surgery/">Laser Eye Surgery Guide</a>
+            </div></div>
+          </div>
           <a href="#cerrahi">Surgeries</a>
           <a href="#akademik">Academic Profile</a>
           <a href="#surec">Consultation</a>
@@ -1000,7 +1154,7 @@
         </p>
         <div class="hero-actions">
           <a href="#iletisim" class="btn btn-gold">Book Appointment</a>
-          <a href="#alanlar" class="btn btn-ghost-white">Specialties</a>
+          <a href="#guides" class="btn btn-ghost-white">Patient Guides</a>
         </div>
 
       </div>
@@ -1009,7 +1163,7 @@
         <img class="hero-photo" src="/toprak.jpeg" alt="Prof. Dr. İbrahim Toprak">
         <div class="hero-visual-overlay"></div>
         <div class="hero-badge-card">
-          <strong>Personalised Approach</strong>
+          <strong>Personalized Approach</strong>
           <p>Every eye is unique. A scientific and ethical process from diagnosis to treatment.</p>
         </div>
       </div>
@@ -1061,13 +1215,30 @@
     </div>
   </div>
 
+
+  <!-- GUIDES STRIP -->
+  <div class="guides" id="guides">
+    <div class="guides-inner container">
+      <a href="/en/keratoconus/" class="guide-card reveal">
+        <div class="guide-icon"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 12.5a5 5 0 110-10 5 5 0 010 10zm0-8a3 3 0 100 6 3 3 0 000-6z"/></svg></div>
+        <div><div class="guide-kicker">Patient Guide</div><div class="guide-title">Keratoconus</div><div class="guide-desc">Symptoms, early diagnosis, cross-linking, Athens and Cretan protocols</div></div>
+        <span class="guide-arrow">→</span>
+      </a>
+      <a href="/en/laser-eye-surgery/" class="guide-card reveal reveal-delay-1">
+        <div class="guide-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <div><div class="guide-kicker">Patient Guide</div><div class="guide-title">Laser Eye Surgery</div><div class="guide-desc">PRK, No-Touch, LASIK, SMILE; who is not a candidate; phakic IOL alternative</div></div>
+        <span class="guide-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
   <!-- =====================================================
        CERTIFICATIONS
   ===================================================== -->
   <section class="certs section" id="sertifikalar">
     <div class="container">
       <div class="label">International Credentials</div>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:end; margin-bottom:40px;">
+      <div class="two-col-head" style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:end; margin-bottom:40px;">
         <h2 class="section-title reveal" style="color:var(--white);">Globally Accredited<br>Standards</h2>
         <p class="section-sub reveal" style="color:rgba(255,255,255,0.55);">The world's most prestigious ophthalmology and surgical institution credentials — proof of science and trust.</p>
       </div>
@@ -1105,7 +1276,7 @@
         <div class="cert-card reveal reveal-delay-3">
           <div class="cert-initials">RCS</div>
           <h4>Royal College of Surgeons of Edinburgh</h4>
-          <p>MRCSEd — membership of an internationally recognised surgical institution.</p>
+          <p>MRCSEd — membership of an internationally recognized surgical institution.</p>
         </div>
       </div>
     </div>
@@ -1164,7 +1335,7 @@
           <p>Laser surgery for spectacle independence is not suitable for everyone. Performed without careful evaluation of corneal thickness, topographic maps and dry eye parameters, laser treatment can cause permanent visual problems. Correct patient selection is the single most important factor for long-term satisfaction — this decision should be made together, with the right data.</p>
           <div class="spec-points">
             <div class="spec-point"><span>Detailed topography and thickness analysis</span></div>
-            <div class="spec-point"><span>Personalised suitability assessment</span></div>
+            <div class="spec-point"><span>Personalized suitability assessment</span></div>
             <div class="spec-point"><span>Alternative planning for high-risk eyes</span></div>
             <div class="spec-point"><span>Long-term visual quality focus</span></div>
           </div>
@@ -1186,9 +1357,9 @@
           <div class="spec-body">
           <div class="spec-tag">Cataract &amp; Premium Lens</div>
             <h3>Cataract and Premium Lens</h3>
-            <p>Expectation management and biometric precision are paramount in FAKO surgery and premium intraocular lens selection. As each patient's visual needs and lifestyle differ, trifocal, toric and EDOF lenses are planned with the correct indication and a personalised evaluation.</p>
+            <p>Expectation management and biometric precision are paramount in PHACO surgery and premium intraocular lens selection. As each patient's visual needs and lifestyle differ, trifocal, toric and EDOF lenses are planned with the correct indication and a personalized evaluation.</p>
             <div class="spec-points">
-              <div class="spec-point"><span>FAKO (sutureless cataract surgery)</span></div>
+              <div class="spec-point"><span>PHACO (sutureless cataract surgery)</span></div>
               <div class="spec-point"><span>Monofocal, EDOF, Trifocal and toric lens selection</span></div>
               <div class="spec-point"><span>Lifestyle-based lens planning</span></div>
               <div class="spec-point"><span>Postoperative visual quality follow-up</span></div>
@@ -1268,7 +1439,7 @@
   <section class="surgeries section" id="cerrahi">
     <div class="container">
       <div class="label">Surgeries</div>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:end;">
+      <div class="two-col-head" style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:end;">
         <h2 class="section-title reveal" style="color:var(--white);">Every Eye Unique,<br><em style="font-style:italic; color:var(--gold-light);">Every Surgery Precise</em></h2>
         <p class="section-sub reveal">Evidence-based surgical procedures supported by current technology.</p>
       </div>
@@ -1280,7 +1451,7 @@
           <div class="surg-cell-title">No-Touch Laser &amp; PRK</div>
           <div class="surg-cell-desc">
             <div class="surg-desc-preview">In PRK the surface is mechanically abraded; in No-Touch PRK the entire procedure is performed with laser.</div>
-            <div class="surg-desc-full">In PRK the surface is mechanically abraded; in No-Touch PRK the entire procedure is performed with laser. Frequently preferred in those with thin corneas or who practise contact sports. Visual outcomes are comparable to LASIK; the risk of dry eye and ectasia is scientifically lower.</div>
+            <div class="surg-desc-full">In PRK the surface is mechanically abraded; in No-Touch PRK the entire procedure is performed with laser. Frequently preferred in those with thin corneas or who practice contact sports. Visual outcomes are comparable to LASIK; the risk of dry eye and ectasia is scientifically lower.</div>
           </div>
           <div class="surg-cell-cta">▶ Watch Video</div>
         </a>
@@ -1319,8 +1490,8 @@
           <div class="surg-cell-line"></div>
           <div class="surg-cell-title">Cataract &amp; Premium Lens</div>
           <div class="surg-cell-desc">
-            <div class="surg-desc-preview">The lens that has lost transparency is extracted by FAKO technique and replaced with an intraocular lens.</div>
-            <div class="surg-desc-full">The lens that has lost transparency is extracted by FAKO technique and replaced with an intraocular lens. Multifocal lenses ('premium lens') can be considered after comprehensive evaluation of examination findings and patient expectations.</div>
+            <div class="surg-desc-preview">The lens that has lost transparency is extracted by PHACO technique and replaced with an intraocular lens.</div>
+            <div class="surg-desc-full">The lens that has lost transparency is extracted by PHACO technique and replaced with an intraocular lens. Multifocal lenses ('premium lens') can be considered after comprehensive evaluation of examination findings and patient expectations.</div>
           </div>
           <div class="surg-cell-cta">▶ Instagram</div>
         </a>
@@ -1417,7 +1588,7 @@
             </div>
             <p>He completed his medical education at Dokuz Eylul University and his specialty training at Pamukkale University, where he subsequently attained the titles of Associate Professor and Professor.</p>
             <p style="margin-top:12px;">The most important step that brought his academic journey to the international arena was at <strong>Vissum Ophthalmology Institute</strong>in Alicante, Spain. With one of the world's leading authorities in Cornea, Cataract and Refractive Surgery, <strong>Prof. Dr. Jorge Alio</strong> this fellowship shaped his clinical vision on a global scale.</p>
-            <p style="margin-top:12px;">He subsequently visited the clinic of <strong>Prof. Dr. Massimo Busin</strong>in Forlì (Italy), a pioneer in lamellar corneal surgery, and the centre of <strong>Prof. Dr. Suphi Taneri</strong>in Münster (Germany), a European reference in laser refractive surgery, consolidating his advanced field-based training. <strong>Prof. Dr. Dan Z. Reinstein</strong> and other leading figures in the world of ophthalmology, ongoing academic collaborations ensure the direct translation of current knowledge into clinical practice.</p>
+            <p style="margin-top:12px;">He subsequently visited the clinic of <strong>Prof. Dr. Massimo Busin</strong> in Forlì (Italy), a pioneer in lamellar corneal surgery, and the center of <strong>Prof. Dr. Suphi Taneri</strong>in Münster (Germany), a European reference in laser refractive surgery, consolidating his advanced field-based training. <strong>Prof. Dr. Dan Z. Reinstein</strong> and other leading figures in the world of ophthalmology, ongoing academic collaborations ensure the direct translation of current knowledge into clinical practice.</p>
           </div>
 
           <div class="ac-card reveal reveal-delay-1">
@@ -1491,7 +1662,7 @@
         <span>Scientific Citations</span>
       </div>
       <div class="statsbar-item reveal reveal-delay-3">
-        <strong>10.000+</strong>
+        <strong>10,000+</strong>
         <span>Surgical Experience</span>
       </div>
     </div>
@@ -1532,7 +1703,7 @@
             <div class="step-item reveal reveal-delay-2">
               <div class="step-num">3</div>
               <div class="step-content">
-                <h4>Personalised Planning</h4>
+                <h4>Personalized Planning</h4>
                 <p>We create a safe, scientifically grounded treatment plan tailored specifically to you.</p>
               </div>
             </div>
@@ -1553,7 +1724,7 @@
   <!-- =====================================================
        FAQ
   ===================================================== -->
-  <section class="faq section">
+  <section class="faq section" id="faq">
     <div class="container">
       <div class="faq-inner">
         <div class="faq-header">
@@ -1566,7 +1737,7 @@
             <span>Is cataract surgery a difficult procedure?</span>
             <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
           </summary>
-          <p class="faq-body">With the modern FAKO technique, cataract surgery is most often performed without sutures. Success is directly related to proper guidance, precise planning and an experienced surgical approach.</p>
+          <p class="faq-body">With the modern PHACO technique, cataract surgery is most often performed without sutures. Success is directly related to proper guidance, precise planning and an experienced surgical approach.</p>
         </details>
 
         <details class="faq-item reveal">
@@ -1591,6 +1762,70 @@
             <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
           </summary>
           <p class="faq-body">Not always. Corneal structure, retinal health, intraocular pressure and visual expectations must all be evaluated before a premium lens decision can be made.</p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>What is keratoconus and what are its symptoms?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Keratoconus is a disease in which the cornea, the clear front window of the eye, thins and bulges forward, distorting vision. It usually begins in the teenage years. A frequently changing prescription, increasing astigmatism, halos around lights and blur that glasses cannot fully correct are early signs. <a href="/en/keratoconus/">Keratoconus guide</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Which tests are used for early diagnosis of keratoconus?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Corneal tomography (Pentacam) measures the front and back surfaces, the thickness map and the epithelial layer; epithelial mapping adds further detail. These measurements can reveal the disease years before a routine glasses exam shows anything abnormal. <a href="/en/keratoconus/#diagnosis">Diagnostic methods</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>How is cross-linking performed and who is it for?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Cross-linking strengthens the cornea by applying riboflavin drops followed by UV-A light. Its goal is to stop keratoconus from progressing; it is performed in patients with documented progression or a high risk of it. Corneal thickness and disease stage determine the protocol. <a href="/en/keratoconus/#cross-linking">Cross-linking details</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Can a keratoconus patient have laser eye surgery?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Standard laser (LASIK, PRK) is not performed in keratoconus; it can further weaken the cornea. In selected cases, topography-guided surface laser combined with cross-linking (Athens / Cretan protocol) may be considered to improve visual quality. The decision rests on detailed tomography. <a href="/en/keratoconus/#laser">Keratoconus and laser</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Who is not a candidate for laser eye surgery?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">A thin or irregular cornea, keratoconus or suspected keratoconus, a prescription that changed within the past year, age under 18, pregnancy, uncontrolled dry eye, certain rheumatic diseases and very high prescriptions can rule out laser. For these patients, alternatives such as a phakic intraocular lens are considered. <a href="/en/laser-eye-surgery/#not-candidates">Candidacy criteria</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>What is the difference between No-Touch laser, PRK, LASIK and SMILE?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">All of them correct the prescription by reshaping the cornea. PRK and No-Touch (TransPRK) work on the surface; in No-Touch the surface is also removed by laser. LASIK creates a thin flap and recovers faster. SMILE removes tissue through a small incision. The choice depends on corneal thickness, prescription and lifestyle. <a href="/en/laser-eye-surgery/#methods">Method comparison</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>When is a phakic intraocular lens (ICL) preferred over laser?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">If the cornea is too thin or structurally unsuitable for laser, the prescription is very high or dry eye is significant, a phakic lens placed inside the eye without touching the natural lens can be an alternative. Candidacy is determined by measuring the internal dimensions of the eye. <a href="/en/laser-eye-surgery/#phakic-iol">Phakic IOL alternative</a></p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>
+            <span>Which examinations are done before laser eye surgery?</span>
+            <div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div>
+          </summary>
+          <p class="faq-body">Corneal tomography (Pentacam), corneal thickness and epithelial map, dry eye tests, pupil size, dilated fundus examination and confirmation that the prescription is stable. These are performed to predict the risk of ectasia (corneal weakening) after laser. <a href="/en/laser-eye-surgery/#evaluation">Preoperative evaluation</a></p>
         </details>
 
       </div>
@@ -1768,10 +2003,10 @@
         </nav>
       </div>
       <p class="footer-legal">
-        <strong style="color:rgba(255,255,255,0.35);">Disclaimer:</strong> The content on this website is for informational purposes only. No content replaces examination, diagnosis or personalised treatment planning. Expert medical evaluation is required for all health decisions. Content has been prepared in accordance with Ministry of Health guidelines.
+        <strong style="color:rgba(255,255,255,0.35);">Disclaimer:</strong> The content on this website is for informational purposes only. No content replaces examination, diagnosis or personalized treatment planning. Expert medical evaluation is required for all health decisions. Content has been prepared in accordance with Ministry of Health guidelines.
       </p>
       <p style="font-size:12px; color:rgba(255,255,255,0.18); margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.05);">
-        © <span id="copy-year"></span> Prof. Dr. İbrahim Toprak. All rights reserved. Unauthorised copying, reproduction or distribution of any text, images or content on this site is prohibited.
+        © <span id="copy-year"></span> Prof. Dr. İbrahim Toprak. All rights reserved. Unauthorized copying, reproduction or distribution of any text, images or content on this site is prohibited.
       </p>
     </div>
   </footer>
